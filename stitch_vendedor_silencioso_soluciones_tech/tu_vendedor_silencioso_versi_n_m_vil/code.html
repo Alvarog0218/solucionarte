@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tu Vendedor Silencioso | Consultoría Estratégica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e3e2e0",
+                        "primary-container": "#2d6a4f",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d9e6da",
+                        "on-background": "#1a1c1b",
+                        "surface-tint": "#2c694e",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#bdcabe",
+                        "tertiary": "#384c43",
+                        "on-tertiary-container": "#c8e0d3",
+                        "surface-dim": "#dadad8",
+                        "surface-container-low": "#f4f3f1",
+                        "background": "#faf9f7",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d9e6da",
+                        "on-primary-fixed": "#002114",
+                        "surface-container-high": "#e9e8e6",
+                        "surface-bright": "#faf9f7",
+                        "surface": "#faf9f7",
+                        "on-tertiary-fixed": "#0b1f18",
+                        "on-secondary": "#ffffff",
+                        "outline": "#707973",
+                        "on-tertiary-fixed-variant": "#374b42",
+                        "on-secondary-fixed-variant": "#3e4a41",
+                        "inverse-on-surface": "#f1f1ef",
+                        "tertiary-container": "#4f645a",
+                        "tertiary-fixed": "#d0e8dc",
+                        "on-error-container": "#93000a",
+                        "secondary": "#556158",
+                        "primary": "#0f5238",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#b5ccc0",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#bfc9c1",
+                        "on-surface-variant": "#404943",
+                        "on-secondary-fixed": "#131e17",
+                        "on-surface": "#1a1c1b",
+                        "surface-container": "#efeeec",
+                        "on-secondary-container": "#5b675e",
+                        "primary-fixed-dim": "#95d4b3",
+                        "on-primary-container": "#a8e7c5",
+                        "inverse-surface": "#2f3130",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "inverse-primary": "#95d4b3",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e3e2e0",
+                        "primary-fixed": "#b1f0ce"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "margin-mobile": "20px",
+                        "container-max-width": "1280px",
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "section-gap-mobile": "4rem",
+                        "section-gap-desktop": "6rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Outfit"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-mobile": ["Outfit"],
+                        "display": ["Outfit"],
+                        "headline-md": ["Outfit"],
+                        "headline-lg": ["Outfit"],
+                        "caption": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #faf9f7;
+            color: #1a1c1b;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-shadow-sm {
+            box-shadow: 0 2px 4px rgba(45, 106, 79, 0.02);
+        }
+        .active-nav-border {
+            border-bottom: 2px solid #0f5238;
+        }
+        .scroll-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="bg-background/80 backdrop-blur-md sticky top-0 z-50 flex justify-between items-center px-margin-mobile py-4 shadow-sm">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+            Tu Vendedor Silencioso
+        </div>
+<div class="flex items-center gap-4">
+<a class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                WhatsApp
+            </a>
+<button class="p-2 text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Mobile Menu Overlay (Hidden by default) -->
+<div class="fixed inset-0 bg-background z-[60] flex-col p-8 transform translate-x-full transition-transform duration-300 hidden" id="mobile-overlay">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-md text-primary font-bold">Menu</span>
+<button class="p-2 text-primary" id="close-menu">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="font-headline-md text-primary font-semibold" href="#servicios">Servicios</a>
+<a class="font-headline-md text-on-surface-variant" href="#diagnostico">Diagnóstico</a>
+<a class="font-headline-md text-on-surface-variant" href="#proceso">Proceso</a>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="px-margin-mobile py-12 flex flex-col gap-stack-lg">
+<div class="flex flex-col gap-4">
+<span class="bg-secondary-container text-primary font-label-md text-label-md px-3 py-1 rounded-full w-fit">
+                Consultoría de Crecimiento
+            </span>
+<h1 class="font-display-mobile text-display-mobile text-primary tracking-tight">
+                Tu infraestructura digital debería vender por ti.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Transformamos procesos técnicos en activos de venta silenciosos que trabajan 24/7 para tu negocio.
+            </p>
+</div>
+<div class="flex flex-col gap-3">
+<button class="bg-primary text-on-primary font-label-md text-label-md py-4 rounded-xl shadow-md flex justify-center items-center gap-2">
+                Empezar Diagnóstico
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-secondary-container text-primary font-label-md text-label-md py-4 rounded-xl border border-outline-variant/30">
+                Ver Portafolio
+            </button>
+</div>
+<div class="relative w-full aspect-video rounded-2xl overflow-hidden border border-outline-variant/30 custom-shadow-sm bg-white">
+<div class="w-full h-full bg-cover bg-center" data-alt="A clean, professional mockup showing a minimalist dashboard UI on a smartphone screen, featuring soft green and cream tones. The background is a brightly lit, modern office space with blurred indoor plants, emphasizing a professional yet warm atmosphere. High-end lighting creates soft reflections on the screen's surface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9g9aIpgKZHdGBNkxkQbwC473bu5wuo89H_Kh-uc_fIDhC94nZ2CIqmOoKjZpPIfP_AWUxAdHEVfbuUbSJdFmyqrpxr5ys34u6jHYxiWzQ-7CamlUOinr5Eee0cJy-7t1zF4wJNHYjVIAX9zYbNB8xIzyyQKjJqWHczzU8yuJauQSXliga9_uYWiqhmAI3havh-wgBc3smkmuOFasNS4Yvbuqlqf6EQAO3ohjBvOe9UrD9Pfu2McI7HPHLVplPzQJKD8OX8LcdWrJY')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+</section>
+<!-- Philosophy Banner -->
+<section class="bg-primary-container text-on-primary-container px-margin-mobile py-16 flex flex-col gap-6">
+<span class="material-symbols-outlined text-4xl">eco</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile">Venta sin fricción, tecnología con propósito.</h2>
+<p class="font-body-md text-body-md opacity-90 leading-relaxed">
+            No instalamos herramientas; diseñamos ecosistemas que comunican autoridad y cierran ventas sin que tengas que decir una sola palabra. Creemos en el crecimiento orgánico potenciado por la eficiencia estructural.
+        </p>
+</section>
+<!-- Diagnosis Matrix -->
+<section class="px-margin-mobile py-section-gap-mobile bg-surface" id="diagnostico">
+<div class="text-center mb-10">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Matriz de Diagnóstico</h3>
+<p class="font-body-md text-on-surface-variant">Identifica el estado actual de tu infraestructura comercial.</p>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 custom-shadow-sm flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">visibility_off</span>
+</div>
+<h4 class="font-headline-md text-primary">Invisibilidad</h4>
+<p class="font-body-md text-on-surface-variant">Tu producto es excelente pero tus activos digitales no reflejan el valor real que aportas.</p>
+<div class="mt-2 text-primary font-label-md text-label-md flex items-center gap-1">
+                    Prioridad Alta
+                    <span class="material-symbols-outlined text-sm">trending_up</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 custom-shadow-sm flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">sync_problem</span>
+</div>
+<h4 class="font-headline-md text-primary">Fricción Operativa</h4>
+<p class="font-body-md text-on-surface-variant">Pierdes leads porque el proceso de contacto es lento, confuso o demasiado manual.</p>
+<div class="mt-2 text-primary font-label-md text-label-md flex items-center gap-1">
+                    Optimización Necesaria
+                    <span class="material-symbols-outlined text-sm">settings</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 custom-shadow-sm flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">query_stats</span>
+</div>
+<h4 class="font-headline-md text-primary">Estancamiento</h4>
+<p class="font-body-md text-on-surface-variant">Has llegado a un techo de ventas y necesitas automatización para escalar sin más personal.</p>
+<div class="mt-2 text-primary font-label-md text-label-md flex items-center gap-1">
+                    Escalabilidad
+                    <span class="material-symbols-outlined text-sm">rocket_launch</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Capabilities Catalog -->
+<section class="bg-surface-container-low px-margin-mobile py-section-gap-mobile" id="servicios">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-center mb-10">Capacidades</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-6 rounded-2xl flex flex-col gap-3 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">web</span>
+<p class="font-label-md text-label-md text-on-surface">Diseño UI/UX</p>
+</div>
+<div class="bg-white p-6 rounded-2xl flex flex-col gap-3 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">automation</span>
+<p class="font-label-md text-label-md text-on-surface">Automatización</p>
+</div>
+<div class="bg-white p-6 rounded-2xl flex flex-col gap-3 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">edit_note</span>
+<p class="font-label-md text-label-md text-on-surface">Copywriting</p>
+</div>
+<div class="bg-white p-6 rounded-2xl flex flex-col gap-3 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">database</span>
+<p class="font-label-md text-label-md text-on-surface">CRM Integración</p>
+</div>
+<div class="bg-white p-6 rounded-2xl flex flex-col gap-3 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<p class="font-label-md text-label-md text-on-surface">Análisis Datos</p>
+</div>
+<div class="bg-white p-6 rounded-2xl flex flex-col gap-3 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">shield_person</span>
+<p class="font-label-md text-label-md text-on-surface">Consultoría</p>
+</div>
+</div>
+</section>
+<!-- 4-Step Process -->
+<section class="px-margin-mobile py-section-gap-mobile" id="proceso">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-12 text-center">Nuestro Proceso</h3>
+<div class="flex flex-col gap-12 relative">
+<!-- Step line -->
+<div class="absolute left-[23px] top-0 bottom-0 w-[2px] bg-secondary-container"></div>
+<!-- Step 1 -->
+<div class="flex gap-6 relative">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 z-10 font-bold">1</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-headline-md text-primary">Inmersión</h5>
+<p class="font-body-md text-on-surface-variant">Entendemos tu negocio, tu cliente ideal y tus cuellos de botella actuales.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-6 relative">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 z-10 font-bold">2</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-headline-md text-primary">Estrategia</h5>
+<p class="font-body-md text-on-surface-variant">Diseñamos el mapa de ruta digital que conectará tu oferta con la demanda.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-6 relative">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 z-10 font-bold">3</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-headline-md text-primary">Ejecución</h5>
+<p class="font-body-md text-on-surface-variant">Construimos los activos: web, embudos, automatizaciones y contenido.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex gap-6 relative">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 z-10 font-bold">4</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-headline-md text-primary">Acompañamiento</h5>
+<p class="font-body-md text-on-surface-variant">Medimos, optimizamos y escalamos según los resultados reales.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="px-margin-mobile pb-section-gap-mobile">
+<div class="bg-secondary-container rounded-3xl p-10 flex flex-col gap-8 text-center items-center">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">¿Listo para que tu negocio hable por sí solo?</h3>
+<p class="font-body-md text-on-secondary-container">Selecciona tu objetivo principal para comenzar:</p>
+<div class="flex flex-wrap justify-center gap-3">
+<button class="bg-white text-primary font-label-md text-label-md px-4 py-3 rounded-full border border-primary/20 shadow-sm">Más Leads</button>
+<button class="bg-white text-primary font-label-md text-label-md px-4 py-3 rounded-full border border-primary/20 shadow-sm">Automatización</button>
+<button class="bg-white text-primary font-label-md text-label-md px-4 py-3 rounded-full border border-primary/20 shadow-sm">Rediseño Web</button>
+<button class="bg-white text-primary font-label-md text-label-md px-4 py-3 rounded-full border border-primary/20 shadow-sm">Marca Personal</button>
+</div>
+<button class="w-full mt-4 bg-primary text-on-primary font-label-md text-label-md py-5 rounded-2xl flex justify-center items-center gap-2 active:scale-95 transition-transform">
+                Hablar por WhatsApp
+                <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low py-12 px-margin-mobile border-t border-outline-variant/30 flex flex-col gap-stack-lg text-center items-center">
+<div class="font-headline-md text-headline-md font-semibold text-primary">Tu Vendedor Silencioso</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-all" href="#">Privacidad</a>
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-all" href="#">Contacto</a>
+<a class="font-label-md text-label-md text-on-secondary-container hover:text-primary transition-all" href="#">Términos</a>
+</div>
+<p class="font-body-md text-body-md text-secondary opacity-70">
+            © 2024 Tu Vendedor Silencioso. Todos los derechos reservados.
+        </p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">language</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">share</span>
+</div>
+</div>
+</footer>
+<script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const overlay = document.getElementById('mobile-overlay');
+
+        menuBtn.addEventListener('click', () => {
+            overlay.classList.remove('hidden');
+            setTimeout(() => {
+                overlay.classList.remove('translate-x-full');
+            }, 10);
+        });
+
+        closeBtn.addEventListener('click', () => {
+            overlay.classList.add('translate-x-full');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        });
+
+        // Click outside handler
+        overlay.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                overlay.classList.add('translate-x-full');
+                setTimeout(() => { overlay.classList.add('hidden'); }, 300);
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-headline: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  
+  --color-surface: #faf9f7;
+  --color-surface-dim: #dadad8;
+  --color-surface-bright: #faf9f7;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f3f1;
+  --color-surface-container: #efeeec;
+  --color-surface-container-high: #e9e8e6;
+  --color-surface-container-highest: #e3e2e0;
+  --color-on-surface: #1a1c1b;
+  --color-on-surface-variant: #404943;
+  --color-outline: #707973;
+  --color-outline-variant: #bfc9c1;
+  
+  --color-primary-base: #0f5238;
+  --color-primary-container: #2d6a4f;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #a8e7c5;
+  --color-primary-fixed: #b1f0ce;
+  --color-primary-fixed-dim: #95d4b3;
+  
+  --color-secondary-base: #556158;
+  --color-secondary-container: #d9e6da;
+  --color-on-secondary-container: #5b675e;
+  
+  --color-tertiary-base: #384c43;
+  --color-tertiary-container: #4f645a;
+  --color-on-tertiary-container: #c8e0d3;
+  
+  --color-background: #faf9f7;
+  --color-dark-forest: #1A2E26;
+}
+
+/* Custom Styles */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid #E2ECE9;
+}
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -10px rgba(15, 82, 56, 0.14);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf9f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfc9c1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d6a4f;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #faf9f7;
+  color: #1a1c1b;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display, .font-headline {
+  font-family: 'Outfit', sans-serif;
+}
