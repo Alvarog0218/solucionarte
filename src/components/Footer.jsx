@@ -18,7 +18,7 @@ export default function Footer({ onOpenWhatsApp }) {
             {/* Left Bio */}
             <div className="max-w-md">
               <span className="font-['Outfit'] text-[#0f5238] text-2xl font-bold mb-3 block tracking-tight">
-                Solucionarte
+                SolucionArte
               </span>
               <p className="text-[#556158] text-sm leading-relaxed">
                 Transformamos procesos manuales en activos digitales que trabajan por ti 24/7. Sin complicaciones, sin jerga técnica, solo resultados medibles.
@@ -48,7 +48,7 @@ export default function Footer({ onOpenWhatsApp }) {
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-[#bfc9c1]/40 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#556158]">
-            <p>© 2026 Solucionarte. Todos los derechos reservados.</p>
+            <p>© 2026 SolucionArte. Todos los derechos reservados.</p>
             
             <div className="flex items-center gap-6 font-medium">
               <button
@@ -100,7 +100,7 @@ export default function Footer({ onOpenWhatsApp }) {
               {modalType === 'privacy' ? (
                 <>
                   <p>
-                    En <strong>Solucionarte</strong> nos tomamos la privacidad y confidencialidad de tu negocio con máxima seriedad.
+                    En <strong>SolucionArte</strong> nos tomamos la privacidad y confidencialidad de tu negocio con máxima seriedad.
                   </p>
                   <p>
                     <strong>1. Uso de Datos:</strong> La información provista en nuestros formularios o conversaciones de WhatsApp es utilizada exclusivamente para diagnosticar tus requerimientos de software y enviarte propuestas comerciales.
@@ -115,7 +115,7 @@ export default function Footer({ onOpenWhatsApp }) {
               ) : (
                 <>
                   <p>
-                    Términos generales para la contratación de desarrollos de software y automatización con <strong>Solucionarte</strong>:
+                    Términos generales para la contratación de desarrollos de software y automatización con <strong>SolucionArte</strong>:
                   </p>
                   <p>
                     <strong>1. Cotizaciones Cerradas:</strong> Garantizamos precios fijos sin costos ocultos sobre los alcances pactados en el Documento de Especificaciones.

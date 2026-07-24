@@ -19,7 +19,7 @@ export default function Navbar({ onOpenWhatsApp }) {
           {/* Logo & Status Badge */}
           <div className="flex items-center gap-3">
             <a href="#" className="font-['Outfit'] text-xl md:text-2xl font-bold text-[#0f5238] tracking-tight hover:opacity-90 transition-opacity">
-              Solucionarte
+              SolucionArte
             </a>
             <span className="hidden lg:inline-flex bg-[#d9e6da] text-[#5b675e] px-3 py-1 rounded-full text-xs font-semibold items-center gap-1.5 border border-[#bfc9c1]/40">
               <span className="w-2 h-2 rounded-full bg-[#2d6a4f] animate-pulse"></span>

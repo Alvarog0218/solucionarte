@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { MessageSquare, Sparkles, Check } from 'lucide-react';
 
 export default function CTASection({ onOpenWhatsApp }) {
-  const [selectedOption, setSelectedOption] = useState('⚡ Quiero automatizar tareas repetitivas en Excel/WhatsApp');
+  const [selectedOption, setSelectedOption] = useState('⚡ Automatizar tareas repetitivas en Excel o WhatsApp');
 
   const options = [
-    '🌐 Quiero modernizar mi página web',
-    '💻 Necesito un software a la medida para mi empresa',
-    '⚡ Quiero automatizar tareas repetitivas en Excel/WhatsApp',
-    '🤔 Tengo un problema en mi negocio pero no sé cómo resolverlo'
+    '⚡ Automatizar tareas repetitivas en Excel o WhatsApp',
+    '💻 Desarrollar un software a la medida de mi empresa',
+    '🌐 Crear o modernizar mi sitio web de alta conversión',
+    '🔍 Diagnosticar la eficiencia operativa de mi negocio'
   ];
 
   const handleStart = () => {
@@ -32,11 +32,11 @@ export default function CTASection({ onOpenWhatsApp }) {
 
           {/* Headline */}
           <h2 className="font-['Outfit'] text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 relative z-10 tracking-tight">
-            ¿Tienes una idea en mente o un problema que te quita el sueño?
+            ¿Listo para automatizar tu negocio?
           </h2>
 
           <p className="text-sm md:text-lg text-[#b1f0ce] mb-8 max-w-2xl mx-auto relative z-10 font-bold">
-            ¿Qué te gustaría resolver o implementar primero?
+            Selecciona tu objetivo y conversemos directamente en WhatsApp:
           </p>
 
           {/* Option Pills */}
@@ -67,7 +67,7 @@ export default function CTASection({ onOpenWhatsApp }) {
               className="inline-flex items-center gap-3 bg-[#2d6a4f] hover:bg-[#b1f0ce] hover:text-[#002114] text-white px-10 py-5 rounded-2xl font-bold text-base md:text-lg transition-all duration-200 shadow-2xl hover:scale-105 active:scale-98 cursor-pointer"
             >
               <MessageSquare className="w-6 h-6" />
-              <span>Iniciar Diagnóstico Gratuito por WhatsApp</span>
+              <span>Iniciar Diagnóstico en WhatsApp</span>
             </button>
           </div>
 

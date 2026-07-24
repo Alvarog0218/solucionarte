@@ -32,7 +32,7 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
       // Ignore if confetti fails
     }
 
-    const fullMessage = `Hola Solucionarte 👋🏼\nMi nombre es: ${contactName || 'Un visitante del sitio web'}\nTipo de proyecto: ${projectType}\n\nMensaje: ${customMsg}`;
+    const fullMessage = `Hola SolucionArte 👋🏼\nMi nombre es: ${contactName || 'Un visitante del sitio web'}\nTipo de proyecto: ${projectType}\n\nMensaje: ${customMsg}`;
     const encodedText = encodeURIComponent(fullMessage);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
 
@@ -66,7 +66,7 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
           </div>
           <div>
             <h3 className="font-['Outfit'] text-2xl font-bold text-[#1a1c1b] leading-tight">
-              Hablar con Solucionarte
+              Hablar con SolucionArte
             </h3>
             <p className="text-xs text-[#2d6a4f] font-medium flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>

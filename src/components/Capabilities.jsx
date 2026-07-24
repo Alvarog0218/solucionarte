@@ -9,11 +9,11 @@ export default function Capabilities({ onOpenWhatsApp }) {
       id: 'software',
       icon: Terminal,
       title: 'Software & Portales a la Medida',
-      tagline: 'Herramientas propias adaptadas al 100% a tus reglas de negocio.',
-      description: 'Sin pagar licencias mensuales por funciones que no necesitas. Diseñamos páneles de control sencillos para gestionar tus clientes, cobros o servicios.',
+      tagline: 'Sistemas propios adaptados 100% a tus reglas de negocio.',
+      description: 'Páneles sencillos para gestionar clientes, cobros u operaciones sin licencias recurrentes.',
       features: [
         'ERPs y CRMs personalizados a tu flujo exacto',
-        'Páneles de administración intuitivos para tu personal',
+        'Páneles intuitivos para tu personal',
         'Bases de datos optimizadas de alto rendimiento',
         'Propiedad intelectual 100% de tu empresa'
       ],
@@ -22,9 +22,9 @@ export default function Capabilities({ onOpenWhatsApp }) {
     {
       id: 'web',
       icon: Globe,
-      title: 'Webs & Landing Pages de Alta Conversión',
-      tagline: 'Sitios web rápidos y atractivos pensados para captar clientes.',
-      description: 'Optimizados para teléfonos móviles y buscadores. Convertimos a los visitantes en conversaciones reales en tu WhatsApp.',
+      title: 'Webs de Alta Conversión',
+      tagline: 'Sitios web de carga instantánea diseñados para captar clientes.',
+      description: 'Páginas veloces adaptadas a móviles que convierten tráfico en chats de WhatsApp.',
       features: [
         'Carga instantánea (< 1 segundo) en móviles',
         'SEO técnico optimizado para motores de búsqueda',
@@ -36,27 +36,27 @@ export default function Capabilities({ onOpenWhatsApp }) {
     {
       id: 'workflows',
       icon: Zap,
-      title: 'Automatización de Procesos & Conexión de Apps',
-      tagline: 'Hacemos que tus programas favoritos trabajen en equipo sin ti.',
-      description: 'Sincronizamos tus hojas de cálculo, correo electrónico, pasarelas de pago y facturación para eliminar el trabajo repetitivo.',
+      title: 'Automatización de Procesos',
+      tagline: 'Conectamos tus aplicaciones para eliminar tareas repetitivas.',
+      description: 'Sincronizamos hojas de cálculo, correo, facturación y pagos para que operen sin ti.',
       features: [
         'Sincronización de inventario en tiempo real',
-        'Generación y envío de facturas PDF automáticas',
-        'Notificaciones de estado de pedido por WhatsApp',
-        'Disparadores ante eventos específicos (webhooks)'
+        'Envío automático de facturas PDF por WhatsApp',
+        'Notificaciones automáticas de estado de pedido',
+        'Conexión vía Webhooks y APIs REST'
       ],
       techStack: ['n8n', 'Zapier', 'Python', 'REST APIs', 'Webhooks']
     },
     {
       id: 'ia',
       icon: Brain,
-      title: 'Agentes de IA & Chatbots Inteligentes 24/7',
-      tagline: 'Inteligencia artificial entrenada con la información de tu empresa.',
-      description: 'Atiende dudas frecuentes, califica prospectos y toma solicitudes fuera del horario laboral con un lenguaje natural y cercano.',
+      title: 'Agentes de IA & Chatbots 24/7',
+      tagline: 'Inteligencia artificial entrenada con los datos de tu empresa.',
+      description: 'Responde consultas, califica prospectos y toma pedidos automáticamente a cualquier hora.',
       features: [
-        'Bots de soporte y cotización entrenados con tu catálogo',
-        'Extracción automática de datos desde facturas/PDFs',
-        'Clasificación inteligente de prospectos y leads',
+        'Bots de atención entrenados con tu catálogo',
+        'Extracción automática de datos desde facturas o PDFs',
+        'Clasificación inteligente de prospectos',
         'Análisis predictivo de ventas y demanda'
       ],
       techStack: ['OpenAI API', 'LangChain', 'Python', 'Vector DB', 'WhatsApp API']
@@ -74,11 +74,11 @@ export default function Capabilities({ onOpenWhatsApp }) {
               Soluciones Digitales
             </span>
             <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] tracking-tight">
-              Catálogo de Capacidades
+              Catálogo de Soluciones
             </h2>
           </div>
           <p className="text-sm md:text-base text-[#556158] max-w-md">
-            Combinamos ingeniería de software moderna con visión comercial de alto rendimiento. Haz clic en cada tarjeta para ver detalles técnicos y alcance.
+            Ingeniería de software moderna enfocada en el retorno de inversión de tu empresa.
           </p>
         </div>
 

@@ -6,17 +6,17 @@ export default function Philosophy() {
     {
       icon: HeartHandshake,
       title: 'Empatía Estratégica',
-      description: 'Analizamos tus procesos operativos, dolor por dolor, antes de redactar cualquier especificación técnica.'
+      description: 'Analizamos tu operación real antes de escribir una sola línea de código.'
     },
     {
       icon: Code2,
       title: 'Código con Propósito',
-      description: 'Construimos lo que realmente te genera retorno de inversión. Cero complejidad artificial ni licencias mensuales infladas.'
+      description: 'Desarrollamos soluciones enfocadas exclusivamente en tu retorno de inversión.'
     },
     {
       icon: Target,
       title: 'Soluciones Orgánicas',
-      description: 'Herramientas tan sencillas e intuitivas que tu equipo las adoptará desde el primer día sin resistencia.'
+      description: 'Herramientas intuitivas que tu equipo adopta desde el primer día sin curva de aprendizaje.'
     }
   ];
 
@@ -37,16 +37,12 @@ export default function Philosophy() {
             </span>
 
             <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#0f5238] mb-6 tracking-tight">
-              Primero Escuchar, Luego Desarrollar
+              Primero Entendemos Tu Negocio, Luego Desarrollamos
             </h2>
 
-            <div className="text-base md:text-lg text-[#374b42] leading-relaxed mb-10 font-normal space-y-4">
+            <div className="text-base md:text-lg text-[#374b42] leading-relaxed mb-10 font-normal space-y-4 max-w-2xl mx-auto">
               <p>
-                La mayoría de los proyectos de software fracasan por la misma razón: las agencias intentan encajar tu negocio en una plantilla preconcebida o te hablan en un idioma técnico incomprensible. Al final, terminas pagando licencias mensuales por herramientas infladas que solo usas al 10%.
-              </p>
-              <p>
-                En <strong className="font-bold text-[#0f5238]">Solucionarte</strong> creemos en un camino diferente. Nos tomamos el tiempo de entender tu negocio desde adentro —tus rutinas, los errores humanos recurrentes y tus metas de ventas— para diseñar activos digitales que realmente alivian tu carga operativa.{' '}
-                <strong className="font-bold text-[#0f5238]">Empatía primero, código después.</strong>
+                El software convencional te obliga a pagar licencias infladas por herramientas que no usas. En <strong className="font-bold text-[#0f5238]">SolucionArte</strong> diseñamos activos digitales hechos 100% a la medida de tu operación. <strong className="font-bold text-[#0f5238]">Empatía primero, código después.</strong>
               </p>
             </div>
           </div>

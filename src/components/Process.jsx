@@ -8,37 +8,37 @@ export default function Process({ onOpenWhatsApp }) {
     {
       number: '1',
       title: 'Charla Diagnóstico',
-      subtitle: 'Entendimiento profundo sin compromisos',
+      subtitle: 'Sesión virtual de 30 minutos',
       icon: MessageSquare,
-      summary: 'Nos tomamos un café virtual de 30 minutos para escuchar los retos de tu negocio y detectar dónde estás perdiendo tiempo y dinero.',
-      deliverable: 'Mapeo de procesos y diagnóstico de cuellos de botella.',
+      summary: 'Analizamos tu operación sin compromiso para detectar dónde pierdes tiempo y dinero.',
+      deliverable: 'Diagnóstico y mapeo de cuellos de botella.',
       duration: '30 min (Sesión virtual 1-a-1)'
     },
     {
       number: '2',
       title: 'Propuesta & Alcance Claro',
-      subtitle: 'Sin jerga técnica ni letras chicas',
+      subtitle: 'Entrega en 24 a 48 horas',
       icon: FileText,
-      summary: 'Te entregamos un plan sencillo en español, con el alcance exacto, los tiempos de entrega y un precio cerrado sin sorpresas.',
-      deliverable: 'Documento de alcance, tiempos de entrega y cotización cerrada.',
+      summary: 'Recibes un plan transparente con el alcance exacto, plazos y precio cerrado sin sorpresas.',
+      deliverable: 'Documento de alcance y cotización fija.',
       duration: 'Entrega en 24 a 48 horas'
     },
     {
       number: '3',
-      title: 'Construcción & Avances Visibles',
-      subtitle: 'Entregas por etapas funcionales',
+      title: 'Construcción & Avances',
+      subtitle: 'Entregas semanales funcionales',
       icon: Code,
-      summary: 'Desarrollamos por etapas y te mostramos avances reales cada semana para validar juntos que todo funcione como imaginas.',
-      deliverable: 'Demostraciones semanales y acceso a ambiente de pruebas.',
+      summary: 'Desarrollamos por etapas y te mostramos avances semanales para validar cada avance.',
+      deliverable: 'Demostraciones semanales y pruebas.',
       duration: 'Sprints de 1 a 3 semanas'
     },
     {
       number: '4',
-      title: 'Entrega, Capacitación & Soporte',
-      subtitle: 'Puesta en marcha y soporte continuo',
+      title: 'Entrega & Soporte',
+      subtitle: 'Puesta en marcha garantizada',
       icon: Rocket,
-      summary: 'Lanzamos tu solución, enseñamos a tu equipo a usarla con videos cortos y nos quedamos a tu lado asegurando que todo fluya perfecto.',
-      deliverable: 'Manuales amigables, capacitación en video y garantía post-lanzamiento.',
+      summary: 'Lanzamos tu solución, capacitamos a tu equipo y te acompañamos post-lanzamiento.',
+      deliverable: 'Capacitación en video y garantía post-entrega.',
       duration: 'Soporte prioritario post-entrega'
     }
   ];
@@ -53,10 +53,10 @@ export default function Process({ onOpenWhatsApp }) {
             Metodología Transparente
           </span>
           <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] mb-4 tracking-tight">
-            Así Construimos Tu Solución (en 4 Pasos)
+            Tu Solución en 4 Pasos Clave
           </h2>
           <p className="text-base md:text-lg text-[#556158]">
-            Un proceso claro y sin sorpresas, diseñado para darte certidumbre y control en cada etapa del proyecto.
+            Proceso transparente diseñado para darte control total en cada etapa del proyecto.
           </p>
         </div>
 

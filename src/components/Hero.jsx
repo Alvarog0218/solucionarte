@@ -23,15 +23,15 @@ export default function Hero({ onOpenWhatsApp }) {
 
             {/* Headline (H1) */}
             <h1 className="font-['Outfit'] text-[38px] sm:text-[48px] md:text-[56px] lg:text-[60px] leading-[1.12] font-bold text-[#1a1c1b] tracking-tight mb-6">
-              Construimos la herramienta que tu negocio{' '}
+              Software y Automatización{' '}
               <span className="text-[#0f5238]">
-                realmente necesita.
+                a la Medida de tu Negocio.
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-[#556158] max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              Sabemos que tu flujo de trabajo es único. Por eso, antes de escribir una sola línea de código, nos sentamos a escucharte para entender tus procesos y devolverte horas libres cada semana.
+              Optimizamos tus procesos operativos para devolverte horas libres cada semana. Sin licencias mensuales ni plantillas rígidas.
             </p>
 
             {/* CTAs */}

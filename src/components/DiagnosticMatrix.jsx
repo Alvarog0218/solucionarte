@@ -16,30 +16,30 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
     {
       icon: AlertTriangle,
       title: 'Caos en Atención por WhatsApp',
-      problem: '¿Sientes que tu equipo pierde horas respondiendo las mismas preguntas en WhatsApp y que los clientes se van por no recibir atención inmediata?',
-      solution: 'Asistentes de Atención & Ventas 24/7',
-      impact: 'Responde preguntas, muestra tu catálogo y toma pedidos automáticos a cualquier hora.'
+      problem: 'Perdemos ventas porque tardamos horas en responder consultas repetitivas en WhatsApp.',
+      solution: 'Asistentes de Atención 24/7',
+      impact: 'Responde dudas, muestra tu catálogo y toma pedidos automáticos a cualquier hora.'
     },
     {
       icon: PackageSearch,
       title: 'Inventario y Cuentas Desordenadas',
-      problem: '¿No sabes con certeza qué stock tienes disponible y las facturas o cobros pendientes se quedan traspapelados entre notas de papel o cuadernos?',
-      solution: 'Control de Inventario & Pedidos a la Medida',
-      impact: 'Stock y cuentas sincronizados automáticamente en una pantalla fácil de entender.'
+      problem: 'No sabemos el stock real y los cobros pendientes se quedan traspapelados en notas.',
+      solution: 'Control de Inventario y Pedidos',
+      impact: 'Stock y cuentas por cobrar sincronizados automáticamente en una sola pantalla.'
     },
     {
       icon: Table,
       title: 'El Infierno de los Excels',
-      problem: '¿Pasas entre 3 y 4 horas al día copiando datos de un lado a otro en múltiples tablas de Excel que se corrompen o fallan constantemente?',
-      solution: 'Automatización de Procesos Operativos',
-      impact: 'Conectamos tus aplicaciones para que la información fluya sola sin digitación manual.'
+      problem: 'Mi equipo pierde horas copiando datos manualmente entre hojas de Excel que fallan.',
+      solution: 'Automatización Operativa',
+      impact: 'Conectamos tus programas para que la información fluya sin digitación manual.'
     },
     {
       icon: Globe,
-      title: 'Sitio Web Desactualizado o Ineficaz',
-      problem: '¿Tu página web se ve antigua, tarda en cargar en teléfonos móviles o parece un folleto estático que no te genera ninguna venta real?',
-      solution: 'Webs de Alta Conversión y Carga Instantánea',
-      impact: 'Páginas modernas y ultra-rápidas diseñadas para convertir visitas en clientes reales.'
+      title: 'Sitio Web Ineficaz',
+      problem: 'Nuestra web es lenta, luce antigua y no genera prospectos ni ventas reales.',
+      solution: 'Webs de Alta Conversión',
+      impact: 'Sitios ultra-rápidos optimizados para convertir visitantes en clientes reales.'
     }
   ];
 
@@ -53,10 +53,10 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
             Diagnóstico de Eficiencia
           </span>
           <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] mb-4 tracking-tight">
-            ¿Reconoces alguno de estos dolores en tu negocio?
+            ¿Reconoces estos dolores en tu negocio?
           </h2>
           <p className="text-base md:text-lg text-[#556158]">
-            Identificar el problema es el 50% de la solución. ¿Dónde sientes la mayor fricción operativa hoy?
+            Identifica la fricción que frena el crecimiento de tu empresa hoy.
           </p>
         </div>
 
@@ -111,10 +111,10 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                 <span>Simulador Interactivo de Ahorro</span>
               </div>
               <h3 className="font-['Outfit'] text-2xl md:text-3xl font-bold text-[#1a1c1b] mb-4">
-                Calcula cuánto tiempo y dinero estás perdiendo
+                Calcula el tiempo y dinero que pierdes
               </h3>
               <p className="text-sm text-[#556158] mb-8">
-                Ajusta los valores de tu equipo para proyectar el impacto de la automatización en tu negocio:
+                Mide el impacto directo de la automatización en la productividad de tu equipo:
               </p>
 
               <div className="space-y-6">

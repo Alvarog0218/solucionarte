@@ -51,7 +51,7 @@ export default function DashboardWidget() {
               <span className="w-3 h-3 rounded-full bg-[#27C93F] inline-block"></span>
             </div>
             <span className="text-xs font-semibold text-[#556158] ml-2 font-mono">
-              solucionarte-engine v2.4
+              SolucionArte-engine v2.4
             </span>
           </div>
 
