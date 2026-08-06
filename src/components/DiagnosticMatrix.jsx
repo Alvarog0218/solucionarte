@@ -53,7 +53,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
             Diagnóstico de Eficiencia
           </span>
           <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] mb-4 tracking-tight">
-            ¿Reconoces estos dolores en tu negocio?
+            ¿Reconoces estas dificultades en tu negocio?
           </h2>
           <p className="text-base md:text-lg text-[#556158]">
             Identifica la fricción que frena el crecimiento de tu empresa hoy.

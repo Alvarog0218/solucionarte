@@ -65,7 +65,7 @@ solucionarte/
 │   │   ├── Hero.jsx              # Sección de bienvenida y propuesta de valor
 │   │   ├── DashboardWidget.jsx   # Widget interactivo simulador de automatizaciones
 │   │   ├── Philosophy.jsx       # Sección "Primero Escuchar, Luego Desarrollar"
-│   │   ├── DiagnosticMatrix.jsx # Matriz de dolores + Calculadora ROI
+│   │   ├── DiagnosticMatrix.jsx # Matriz de dificultades + Calculadora ROI
 │   │   ├── Capabilities.jsx     # Catálogo de servicios con modales técnicos
 │   │   ├── Process.jsx          # Visualizador interactivo de metodología
 │   │   ├── CTASection.jsx       # Cierre persuasivo y selector de opciones rápido
