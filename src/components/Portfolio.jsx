@@ -54,14 +54,14 @@ export default function Portfolio({ onOpenWhatsApp }) {
           </p>
         </div>
 
-        {/* 4-Project Grid */}
-        <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
+        {/* 4-Project Row (Single Line) */}
+        <div className="flex flex-row overflow-x-auto pb-6 lg:pb-0 lg:overflow-x-visible gap-6 lg:grid lg:grid-cols-4 scrollbar-thin">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
               <div 
                 key={index} 
-                className="bg-white rounded-3xl border border-[#e2f4f7] hover:border-[#0097b2]/40 p-6 md:p-8 hover-lift shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                className="bg-white rounded-3xl border border-[#e2f4f7] hover:border-[#0097b2]/40 p-6 md:p-8 hover-lift shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between shrink-0 w-[290px] sm:w-[320px] lg:w-auto"
               >
                 <div>
                   {/* Category and Icon */}
