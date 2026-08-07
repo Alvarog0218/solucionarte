@@ -1,4 +1,4 @@
-# 🌿 SolucionArte — Desarrollo & Automatización a la Medida
+# 🌿 AP Desarrollo — Desarrollo & Automatización a la Medida
 
 ![React](https://img.shields.io/badge/React-19.0.0-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-6.1.0-646CFF?logo=vite&logoColor=white)
@@ -7,7 +7,7 @@
 
 > **"Construimos la herramienta que tu negocio realmente necesita."**
 
-**SolucionArte** es una aplicación web y landing page de alta conversión desarrollada para un estudio de consultoría independiente en software, automatización de procesos e inteligencia artificial aplicada a PyMEs y profesionales no técnicos.
+**AP Desarrollo** es una aplicación web y landing page de alta conversión desarrollada para un estudio de consultoría independiente en software, automatización de procesos e inteligencia artificial aplicada a PyMEs y profesionales no técnicos.
 
 ---
 
@@ -129,4 +129,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo para más informac
 
 ---
 
-Desarrollado con ❤️ para **SolucionArte**.
+Desarrollado con ❤️ para **AP Desarrollo**.

@@ -49,7 +49,7 @@ export default function Process({ onOpenWhatsApp }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block bg-[#d9e6da] text-[#0f5238] px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-[#bfc9c1]/40">
+          <span className="inline-block bg-[#e0f7fc] text-[#00768c] px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-[#bfc9c1]/40">
             Metodología Transparente
           </span>
           <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] mb-4 tracking-tight">
@@ -73,13 +73,13 @@ export default function Process({ onOpenWhatsApp }) {
                 onClick={() => setActiveStep(index)}
                 className={`relative z-10 flex flex-col items-center text-center p-6 rounded-2xl transition-all cursor-pointer border ${
                   isActive
-                    ? 'bg-white border-[#2d6a4f] shadow-lg scale-102'
+                    ? 'bg-white border-[#0097b2] shadow-lg scale-102'
                     : 'bg-[#f4f3f1]/70 border-[#bfc9c1]/30 hover:bg-white hover:border-[#bfc9c1]'
                 }`}
               >
                 <div
                   className={`w-14 h-14 rounded-full flex items-center justify-center font-bold text-lg mb-4 transition-colors shadow-md ${
-                    isActive ? 'bg-[#2d6a4f] text-white' : 'bg-[#0f5238]/10 text-[#0f5238]'
+                    isActive ? 'bg-[#0097b2] text-white' : 'bg-[#00768c]/10 text-[#00768c]'
                   }`}
                 >
                   {step.number}
@@ -99,10 +99,10 @@ export default function Process({ onOpenWhatsApp }) {
         </div>
 
         {/* Selected Step Detailed View Card */}
-        <div className="bg-white rounded-3xl p-8 md:p-10 border border-[#E2ECE9] shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-white rounded-3xl p-8 md:p-10 border border-[#e2f4f7] shadow-sm max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-3">
-              <span className="w-8 h-8 rounded-full bg-[#d9e6da] text-[#0f5238] font-bold text-sm flex items-center justify-center">
+              <span className="w-8 h-8 rounded-full bg-[#e0f7fc] text-[#00768c] font-bold text-sm flex items-center justify-center">
                 {steps[activeStep].number}
               </span>
               <h4 className="font-['Outfit'] text-2xl font-bold text-[#1a1c1b]">
@@ -115,12 +115,12 @@ export default function Process({ onOpenWhatsApp }) {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-              <div className="p-3.5 bg-[#faf9f7] rounded-xl border border-[#E2ECE9]">
-                <span className="font-bold text-[#0f5238] block mb-1">Entregable Concreto:</span>
+              <div className="p-3.5 bg-[#faf9f7] rounded-xl border border-[#e2f4f7]">
+                <span className="font-bold text-[#00768c] block mb-1">Entregable Concreto:</span>
                 <span className="text-[#556158]">{steps[activeStep].deliverable}</span>
               </div>
-              <div className="p-3.5 bg-[#faf9f7] rounded-xl border border-[#E2ECE9]">
-                <span className="font-bold text-[#0f5238] block mb-1">Tiempo Estimado:</span>
+              <div className="p-3.5 bg-[#faf9f7] rounded-xl border border-[#e2f4f7]">
+                <span className="font-bold text-[#00768c] block mb-1">Tiempo Estimado:</span>
                 <span className="text-[#556158]">{steps[activeStep].duration}</span>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Process({ onOpenWhatsApp }) {
           <div className="w-full md:w-auto text-center shrink-0">
             <button
               onClick={() => onOpenWhatsApp(`Hola! Quisiera agendar el Paso 1: Charla Diagnóstico para mi proyecto`)}
-              className="w-full md:w-auto bg-[#2d6a4f] hover:bg-[#0f5238] text-white px-8 py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-all shadow-md active:scale-98 cursor-pointer"
+              className="w-full md:w-auto bg-[#0097b2] hover:bg-[#00768c] text-white px-8 py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-all shadow-md active:scale-98 cursor-pointer"
             >
               <span>Agendar Diagnóstico Gratuito</span>
               <ArrowRight className="w-4 h-4" />

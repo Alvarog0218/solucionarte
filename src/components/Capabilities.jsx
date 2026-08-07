@@ -70,7 +70,7 @@ export default function Capabilities({ onOpenWhatsApp }) {
         {/* Section Title */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
-            <span className="inline-block bg-[#d9e6da] text-[#0f5238] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-[#bfc9c1]/40">
+            <span className="inline-block bg-[#e0f7fc] text-[#00768c] px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-[#bfc9c1]/40">
               Soluciones Digitales
             </span>
             <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] tracking-tight">
@@ -93,11 +93,11 @@ export default function Capabilities({ onOpenWhatsApp }) {
                 className="bg-[#f4f3f1] p-8 rounded-2xl border border-[#bfc9c1]/30 hover:bg-white hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-[#0f5238] group-hover:bg-[#2d6a4f] group-hover:text-white transition-colors shadow-xs">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-[#00768c] group-hover:bg-[#0097b2] group-hover:text-white transition-colors shadow-xs">
                     <Icon className="w-6 h-6" />
                   </div>
 
-                  <h3 className="font-['Outfit'] font-bold text-xl text-[#1a1c1b] mb-2 group-hover:text-[#0f5238] transition-colors">
+                  <h3 className="font-['Outfit'] font-bold text-xl text-[#1a1c1b] mb-2 group-hover:text-[#00768c] transition-colors">
                     {cap.title}
                   </h3>
 
@@ -106,7 +106,7 @@ export default function Capabilities({ onOpenWhatsApp }) {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-[#bfc9c1]/20 flex items-center justify-between text-xs font-bold text-[#0f5238]">
+                <div className="pt-4 border-t border-[#bfc9c1]/20 flex items-center justify-between text-xs font-bold text-[#00768c]">
                   <span>Ver detalles &amp; stack</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
@@ -124,7 +124,7 @@ export default function Capabilities({ onOpenWhatsApp }) {
           onClick={() => setSelectedCap(null)}
         >
           <div
-            className="bg-white rounded-3xl max-w-2xl w-full p-6 md:p-8 border border-[#E2ECE9] shadow-2xl relative animate-in fade-in zoom-in duration-200"
+            className="bg-white rounded-3xl max-w-2xl w-full p-6 md:p-8 border border-[#e2f4f7] shadow-2xl relative animate-in fade-in zoom-in duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -135,14 +135,14 @@ export default function Capabilities({ onOpenWhatsApp }) {
             </button>
 
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-xl bg-[#2d6a4f] text-white flex items-center justify-center shadow-md">
+              <div className="w-12 h-12 rounded-xl bg-[#0097b2] text-white flex items-center justify-center shadow-md">
                 <selectedCap.icon className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="font-['Outfit'] text-2xl font-bold text-[#1a1c1b]">
                   {selectedCap.title}
                 </h3>
-                <p className="text-xs text-[#2d6a4f] font-semibold">{selectedCap.tagline}</p>
+                <p className="text-xs text-[#0097b2] font-semibold">{selectedCap.tagline}</p>
               </div>
             </div>
 
@@ -158,7 +158,7 @@ export default function Capabilities({ onOpenWhatsApp }) {
               <div className="space-y-2">
                 {selectedCap.features.map((feat, idx) => (
                   <div key={idx} className="flex items-center gap-2.5 text-xs text-[#1a1c1b]">
-                    <div className="w-4 h-4 rounded-full bg-[#d9e6da] text-[#0f5238] flex items-center justify-center shrink-0">
+                    <div className="w-4 h-4 rounded-full bg-[#e0f7fc] text-[#00768c] flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3" />
                     </div>
                     <span>{feat}</span>
@@ -168,9 +168,9 @@ export default function Capabilities({ onOpenWhatsApp }) {
             </div>
 
             {/* Tech Stack Chips */}
-            <div className="mb-8 pt-4 border-t border-[#E2ECE9]">
+            <div className="mb-8 pt-4 border-t border-[#e2f4f7]">
               <h4 className="text-xs font-extrabold text-[#556158] uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                <Code2 className="w-4 h-4 text-[#2d6a4f]" />
+                <Code2 className="w-4 h-4 text-[#0097b2]" />
                 Stack Tecnológico
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -199,7 +199,7 @@ export default function Capabilities({ onOpenWhatsApp }) {
                   setSelectedCap(null);
                   onOpenWhatsApp(`Hola! Me interesa la capacidad de ${cap.title}`);
                 }}
-                className="px-6 py-2.5 rounded-xl bg-[#2d6a4f] text-white text-xs font-bold hover:bg-[#0f5238] transition-colors shadow-md"
+                className="px-6 py-2.5 rounded-xl bg-[#0097b2] text-white text-xs font-bold hover:bg-[#00768c] transition-colors shadow-md"
               >
                 Cotizar este servicio en WhatsApp
               </button>

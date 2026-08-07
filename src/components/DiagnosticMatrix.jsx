@@ -44,12 +44,12 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white border-y border-[#E2ECE9]" id="diagnostico">
+    <section className="py-16 md:py-24 bg-white border-y border-[#e2f4f7]" id="diagnostico">
       <div className="max-w-[1280px] mx-auto px-5 md:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block bg-[#d9e6da] text-[#0f5238] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-[#bfc9c1]/40">
+          <span className="inline-block bg-[#e0f7fc] text-[#00768c] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-[#bfc9c1]/40">
             Diagnóstico de Eficiencia
           </span>
           <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] mb-4 tracking-tight">
@@ -67,7 +67,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
             return (
               <div
                 key={index}
-                className="bg-[#faf9f7] p-7 rounded-2xl border border-[#E2ECE9] hover-lift flex flex-col justify-between h-full group"
+                className="bg-[#faf9f7] p-7 rounded-2xl border border-[#e2f4f7] hover-lift flex flex-col justify-between h-full group"
               >
                 <div>
                   <div className="mb-5 flex justify-between items-start">
@@ -79,7 +79,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                     </span>
                   </div>
 
-                  <h3 className="font-['Outfit'] font-bold text-xl text-[#1a1c1b] mb-3 group-hover:text-[#0f5238] transition-colors">
+                  <h3 className="font-['Outfit'] font-bold text-xl text-[#1a1c1b] mb-3 group-hover:text-[#00768c] transition-colors">
                     {item.title}
                   </h3>
 
@@ -88,12 +88,12 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                   </p>
                 </div>
 
-                <div className="pt-5 border-t border-[#E2ECE9]">
-                  <div className="flex items-center gap-2 text-[#0f5238] font-bold text-sm mb-1">
-                    <CheckCircle2 className="w-4 h-4 text-[#2d6a4f] shrink-0" />
+                <div className="pt-5 border-t border-[#e2f4f7]">
+                  <div className="flex items-center gap-2 text-[#00768c] font-bold text-sm mb-1">
+                    <CheckCircle2 className="w-4 h-4 text-[#0097b2] shrink-0" />
                     <span>{item.solution}</span>
                   </div>
-                  <p className="text-[12px] text-[#5b675e] pl-6 leading-normal">{item.impact}</p>
+                  <p className="text-[12px] text-[#4d6569] pl-6 leading-normal">{item.impact}</p>
                 </div>
               </div>
             );
@@ -101,13 +101,13 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
         </div>
 
         {/* Interactive ROI Calculator Section */}
-        <div className="bg-[#faf9f7] rounded-3xl p-8 md:p-12 border border-[#E2ECE9] shadow-sm" id="calculadora">
+        <div className="bg-[#faf9f7] rounded-3xl p-8 md:p-12 border border-[#e2f4f7] shadow-sm" id="calculadora">
           <div className="flex flex-col lg:flex-row items-center gap-10">
             
             {/* Calculator Controls */}
             <div className="flex-1 w-full">
-              <div className="flex items-center gap-2 text-[#0f5238] font-bold text-sm mb-2">
-                <Calculator className="w-5 h-5 text-[#2d6a4f]" />
+              <div className="flex items-center gap-2 text-[#00768c] font-bold text-sm mb-2">
+                <Calculator className="w-5 h-5 text-[#0097b2]" />
                 <span>Simulador Interactivo de Ahorro</span>
               </div>
               <h3 className="font-['Outfit'] text-2xl md:text-3xl font-bold text-[#1a1c1b] mb-4">
@@ -122,7 +122,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                 <div>
                   <div className="flex justify-between items-center mb-2 text-sm font-semibold text-[#1a1c1b]">
                     <span>Personal dedicado a tareas repetitivas:</span>
-                    <span className="font-bold text-[#0f5238] bg-[#d9e6da] px-3 py-1 rounded-lg">
+                    <span className="font-bold text-[#00768c] bg-[#e0f7fc] px-3 py-1 rounded-lg">
                       {employees} personas
                     </span>
                   </div>
@@ -132,7 +132,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                     max="20"
                     value={employees}
                     onChange={(e) => setEmployees(parseInt(e.target.value))}
-                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#2d6a4f]"
+                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#0097b2]"
                   />
                 </div>
 
@@ -140,7 +140,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                 <div>
                   <div className="flex justify-between items-center mb-2 text-sm font-semibold text-[#1a1c1b]">
                     <span>Horas perdidas/semana por persona:</span>
-                    <span className="font-bold text-[#0f5238] bg-[#d9e6da] px-3 py-1 rounded-lg">
+                    <span className="font-bold text-[#00768c] bg-[#e0f7fc] px-3 py-1 rounded-lg">
                       {hoursPerEmployee} hrs/semana
                     </span>
                   </div>
@@ -150,7 +150,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                     max="20"
                     value={hoursPerEmployee}
                     onChange={(e) => setHoursPerEmployee(parseInt(e.target.value))}
-                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#2d6a4f]"
+                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#0097b2]"
                   />
                 </div>
 
@@ -158,7 +158,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                 <div>
                   <div className="flex justify-between items-center mb-2 text-sm font-semibold text-[#1a1c1b]">
                     <span>Costo estimado por hora (USD):</span>
-                    <span className="font-bold text-[#0f5238] bg-[#d9e6da] px-3 py-1 rounded-lg">
+                    <span className="font-bold text-[#00768c] bg-[#e0f7fc] px-3 py-1 rounded-lg">
                       ${hourlyRate} USD/hr
                     </span>
                   </div>
@@ -168,17 +168,17 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                     max="50"
                     value={hourlyRate}
                     onChange={(e) => setHourlyRate(parseInt(e.target.value))}
-                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#2d6a4f]"
+                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#0097b2]"
                   />
                 </div>
               </div>
             </div>
 
             {/* Calculator Results Display */}
-            <div className="w-full lg:w-96 bg-[#1A2E26] text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between border border-[#2d6a4f]/50">
+            <div className="w-full lg:w-96 bg-[#0b272f] text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between border border-[#0097b2]/50">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
-                  <span className="text-xs font-bold text-[#b1f0ce] uppercase tracking-wider flex items-center gap-1">
+                  <span className="text-xs font-bold text-[#bbf2fc] uppercase tracking-wider flex items-center gap-1">
                     <Sparkles className="w-4 h-4" /> Proyección Estimada
                   </span>
                   <span className="text-[11px] bg-white/10 text-white px-2 py-0.5 rounded-full">
@@ -190,7 +190,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                   <p className="text-xs text-[#bfc9c1] uppercase font-bold tracking-wider mb-1">
                     Tiempo Recuperado
                   </p>
-                  <p className="font-['Outfit'] text-4xl font-extrabold text-[#b1f0ce]">
+                  <p className="font-['Outfit'] text-4xl font-extrabold text-[#bbf2fc]">
                     {weeklyHoursSaved} hrs<span className="text-sm font-normal text-white/80">/semana</span>
                   </p>
                 </div>
@@ -200,14 +200,14 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
                     Ahorro Proyectado Anual
                   </p>
                   <p className="font-['Outfit'] text-4xl font-extrabold text-white">
-                    ${yearlySavings.toLocaleString()} <span className="text-xs font-normal text-[#b1f0ce]">USD</span>
+                    ${yearlySavings.toLocaleString()} <span className="text-xs font-normal text-[#bbf2fc]">USD</span>
                   </p>
                 </div>
               </div>
 
               <button
                 onClick={() => onOpenWhatsApp(`Hola! Usé su calculadora: tengo ${employees} empleados perdiendo ${hoursPerEmployee}h/sem. Quiero recuperar estas ${weeklyHoursSaved}h semanales`)}
-                className="w-full bg-[#2d6a4f] hover:bg-[#b1f0ce] hover:text-[#002114] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg active:scale-98 cursor-pointer text-sm"
+                className="w-full bg-[#0097b2] hover:bg-[#bbf2fc] hover:text-[#001e24] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg active:scale-98 cursor-pointer text-sm"
               >
                 <MessageSquare className="w-4 h-4" />
                 Recuperar estas {weeklyHoursSaved}h en WhatsApp

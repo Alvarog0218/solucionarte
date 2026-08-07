@@ -10,15 +10,15 @@ export default function Footer({ onOpenWhatsApp }) {
 
   return (
     <>
-      <footer className="bg-[#f4f3f1] border-t border-[#E2ECE9] pt-16 pb-10">
+      <footer className="bg-[#f4f3f1] border-t border-[#e2f4f7] pt-16 pb-10">
         <div className="max-w-[1280px] mx-auto px-5 md:px-8">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
             
             {/* Left Bio */}
             <div className="max-w-md">
-              <span className="font-['Outfit'] text-[#0f5238] text-2xl font-bold mb-3 block tracking-tight">
-                SolucionArte
+              <span className="font-['Outfit'] text-[#00768c] text-2xl font-bold mb-3 block tracking-tight">
+                AP Desarrollo
               </span>
               <p className="text-[#556158] text-sm leading-relaxed">
                 Transformamos procesos manuales en activos digitales que trabajan por ti 24/7. Sin complicaciones, sin jerga técnica, solo resultados medibles.
@@ -29,7 +29,7 @@ export default function Footer({ onOpenWhatsApp }) {
             <div className="flex items-center gap-4 flex-wrap">
               <button
                 onClick={scrollToTop}
-                className="w-10 h-10 rounded-full border border-[#bfc9c1] flex items-center justify-center text-[#0f5238] hover:bg-[#2d6a4f] hover:text-white transition-all shadow-2xs cursor-pointer"
+                className="w-10 h-10 rounded-full border border-[#bfc9c1] flex items-center justify-center text-[#00768c] hover:bg-[#0097b2] hover:text-white transition-all shadow-2xs cursor-pointer"
                 title="Volver arriba"
               >
                 <ArrowUp className="w-4 h-4" />
@@ -37,7 +37,7 @@ export default function Footer({ onOpenWhatsApp }) {
 
               <button
                 onClick={() => onOpenWhatsApp('Contacto directo desde el pie de página')}
-                className="bg-[#2d6a4f] hover:bg-[#0f5238] text-white px-6 py-3 rounded-xl font-bold text-xs flex items-center gap-2 transition-all shadow-md active:scale-98 cursor-pointer"
+                className="bg-[#0097b2] hover:bg-[#00768c] text-white px-6 py-3 rounded-xl font-bold text-xs flex items-center gap-2 transition-all shadow-md active:scale-98 cursor-pointer"
               >
                 <MessageSquare className="w-4 h-4" />
                 Contacto Directo
@@ -48,26 +48,26 @@ export default function Footer({ onOpenWhatsApp }) {
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-[#bfc9c1]/40 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#556158]">
-            <p>© 2026 SolucionArte. Todos los derechos reservados.</p>
+            <p>© 2026 AP Desarrollo. Todos los derechos reservados.</p>
             
             <div className="flex items-center gap-6 font-medium">
               <button
                 onClick={() => setModalType('privacy')}
-                className="hover:text-[#0f5238] underline decoration-transparent hover:decoration-[#0f5238] transition-all cursor-pointer"
+                className="hover:text-[#00768c] underline decoration-transparent hover:decoration-[#00768c] transition-all cursor-pointer"
               >
                 Política de Privacidad
               </button>
 
               <button
                 onClick={() => setModalType('terms')}
-                className="hover:text-[#0f5238] underline decoration-transparent hover:decoration-[#0f5238] transition-all cursor-pointer"
+                className="hover:text-[#00768c] underline decoration-transparent hover:decoration-[#00768c] transition-all cursor-pointer"
               >
                 Términos del Servicio
               </button>
 
               <a
                 href="#servicios"
-                className="hover:text-[#0f5238] underline decoration-transparent hover:decoration-[#0f5238] transition-all"
+                className="hover:text-[#00768c] underline decoration-transparent hover:decoration-[#00768c] transition-all"
               >
                 Proyectos
               </a>
@@ -84,11 +84,11 @@ export default function Footer({ onOpenWhatsApp }) {
           onClick={() => setModalType(null)}
         >
           <div
-            className="bg-white rounded-3xl max-w-xl w-full p-6 md:p-8 border border-[#E2ECE9] shadow-2xl relative animate-in fade-in zoom-in duration-200 max-h-[80vh] overflow-y-auto"
+            className="bg-white rounded-3xl max-w-xl w-full p-6 md:p-8 border border-[#e2f4f7] shadow-2xl relative animate-in fade-in zoom-in duration-200 max-h-[80vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#d9e6da] text-[#0f5238] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-[#e0f7fc] text-[#00768c] flex items-center justify-center">
                 {modalType === 'privacy' ? <Shield className="w-5 h-5" /> : <FileText className="w-5 h-5" />}
               </div>
               <h3 className="font-['Outfit'] text-2xl font-bold text-[#1a1c1b]">
@@ -100,7 +100,7 @@ export default function Footer({ onOpenWhatsApp }) {
               {modalType === 'privacy' ? (
                 <>
                   <p>
-                    En <strong>SolucionArte</strong> nos tomamos la privacidad y confidencialidad de tu negocio con máxima seriedad.
+                    En <strong>AP Desarrollo</strong> nos tomamos la privacidad y confidencialidad de tu negocio con máxima seriedad.
                   </p>
                   <p>
                     <strong>1. Uso de Datos:</strong> La información provista en nuestros formularios o conversaciones de WhatsApp es utilizada exclusivamente para diagnosticar tus requerimientos de software y enviarte propuestas comerciales.
@@ -115,7 +115,7 @@ export default function Footer({ onOpenWhatsApp }) {
               ) : (
                 <>
                   <p>
-                    Términos generales para la contratación de desarrollos de software y automatización con <strong>SolucionArte</strong>:
+                    Términos generales para la contratación de desarrollos de software y automatización con <strong>AP Desarrollo</strong>:
                   </p>
                   <p>
                     <strong>1. Cotizaciones Cerradas:</strong> Garantizamos precios fijos sin costos ocultos sobre los alcances pactados en el Documento de Especificaciones.
@@ -133,7 +133,7 @@ export default function Footer({ onOpenWhatsApp }) {
             <div className="flex justify-end">
               <button
                 onClick={() => setModalType(null)}
-                className="px-6 py-2.5 rounded-xl bg-[#2d6a4f] text-white text-xs font-bold hover:bg-[#0f5238] transition-colors cursor-pointer"
+                className="px-6 py-2.5 rounded-xl bg-[#0097b2] text-white text-xs font-bold hover:bg-[#00768c] transition-colors cursor-pointer"
               >
                 Entendido
               </button>

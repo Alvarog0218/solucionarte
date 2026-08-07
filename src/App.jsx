@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Philosophy from './components/Philosophy';
 import DiagnosticMatrix from './components/DiagnosticMatrix';
 import Capabilities from './components/Capabilities';
+import Portfolio from './components/Portfolio';
 import Process from './components/Process';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
@@ -19,7 +20,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf9f7] text-[#1a1c1b] font-body selection:bg-[#b1f0ce] selection:text-[#002114]">
+    <div className="min-h-screen bg-[#faf9f7] text-[#1a1c1b] font-body selection:bg-[#bbf2fc] selection:text-[#001e24]">
       {/* Navigation */}
       <Navbar onOpenWhatsApp={handleOpenWhatsApp} />
 
@@ -36,6 +37,9 @@ export default function App() {
 
         {/* Capabilities Catalog */}
         <Capabilities onOpenWhatsApp={handleOpenWhatsApp} />
+
+        {/* Portfolio Section */}
+        <Portfolio onOpenWhatsApp={handleOpenWhatsApp} />
 
         {/* Development Process */}
         <Process onOpenWhatsApp={handleOpenWhatsApp} />

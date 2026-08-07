@@ -5,26 +5,23 @@ export default function Navbar({ onOpenWhatsApp }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Servicios', href: '#servicios' },
+    { name: 'Filosofía', href: '#filosofia' },
     { name: 'Diagnóstico', href: '#diagnostico' },
     { name: 'Calculadora ROI', href: '#calculadora' },
+    { name: 'Servicios', href: '#servicios' },
+    { name: 'Portafolio', href: '#portafolio' },
     { name: 'Proceso', href: '#proceso' },
-    { name: 'Filosofía', href: '#filosofia' },
   ];
 
   return (
     <>
-      <nav className="bg-[#faf9f7]/85 backdrop-blur-md sticky top-0 z-50 w-full border-b border-[#E2ECE9] shadow-xs">
-        <div className="max-w-[1280px] mx-auto flex justify-between items-center px-5 md:px-8 py-3.5">
+      <nav className="bg-[#faf9f7]/85 backdrop-blur-md sticky top-0 z-50 w-full border-b border-[#e2f4f7] shadow-xs h-[100px] md:h-[140px]">
+        <div className="max-w-[1280px] mx-auto flex justify-between items-center px-5 md:px-8 h-full py-0">
           {/* Logo & Status Badge */}
           <div className="flex items-center gap-3">
-            <a href="#" className="font-['Outfit'] text-xl md:text-2xl font-bold text-[#0f5238] tracking-tight hover:opacity-90 transition-opacity">
-              SolucionArte
+            <a href="#" className="hover:opacity-90 transition-opacity flex items-center">
+              <img src="/logo.png" alt="AP Desarrollo" className="h-[100px] md:h-[140px] max-w-[280px] md:max-w-[400px] w-auto object-contain" />
             </a>
-            <span className="hidden lg:inline-flex bg-[#d9e6da] text-[#5b675e] px-3 py-1 rounded-full text-xs font-semibold items-center gap-1.5 border border-[#bfc9c1]/40">
-              <span className="w-2 h-2 rounded-full bg-[#2d6a4f] animate-pulse"></span>
-              Disponibilidad Abierta
-            </span>
           </div>
 
           {/* Desktop Nav Links */}
@@ -33,7 +30,7 @@ export default function Navbar({ onOpenWhatsApp }) {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[#404943] text-sm font-medium hover:text-[#0f5238] transition-colors duration-200"
+                className="text-[#404943] text-sm font-medium hover:text-[#00768c] transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -44,7 +41,7 @@ export default function Navbar({ onOpenWhatsApp }) {
           <div className="flex items-center gap-3">
             <button
               onClick={() => onOpenWhatsApp('Consulta general desde el menú')}
-              className="bg-[#2d6a4f] hover:bg-[#0f5238] text-white px-5 py-2.5 rounded-lg flex items-center gap-2 text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow-md active:scale-97 cursor-pointer"
+              className="bg-[#0097b2] hover:bg-[#00768c] text-white px-5 py-2.5 rounded-lg flex items-center gap-2 text-sm font-semibold transition-all duration-200 shadow-sm hover:shadow-md active:scale-97 cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
               <span className="hidden sm:inline">Hablemos por WhatsApp</span>
@@ -55,7 +52,7 @@ export default function Navbar({ onOpenWhatsApp }) {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Abrir menú"
-              className="md:hidden p-2 text-[#0f5238] hover:bg-[#d9e6da]/50 rounded-lg transition-colors"
+              className="md:hidden p-2 text-[#00768c] hover:bg-[#e0f7fc]/50 rounded-lg transition-colors"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -67,13 +64,13 @@ export default function Navbar({ onOpenWhatsApp }) {
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs md:hidden" onClick={() => setMobileMenuOpen(false)}>
           <div
-            className="fixed top-16 right-0 left-0 bg-[#faf9f7] border-b border-[#E2ECE9] p-6 shadow-xl flex flex-col gap-5 animate-in slide-in-from-top duration-200"
+            className="fixed top-[100px] right-0 left-0 bg-[#faf9f7] border-b border-[#e2f4f7] p-6 shadow-xl flex flex-col gap-5 animate-in slide-in-from-top duration-200"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex justify-between items-center pb-3 border-b border-[#E2ECE9]">
+            <div className="flex justify-between items-center pb-3 border-b border-[#e2f4f7]">
               <span className="text-xs font-bold text-[#556158] uppercase tracking-wider">Navegación</span>
-              <span className="inline-flex bg-[#d9e6da] text-[#5b675e] px-2.5 py-0.5 rounded-full text-xs font-semibold items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#2d6a4f] animate-pulse"></span>
+              <span className="inline-flex bg-[#e0f7fc] text-[#4d6569] px-2.5 py-0.5 rounded-full text-xs font-semibold items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0097b2] animate-pulse"></span>
                 En línea
               </span>
             </div>
@@ -84,7 +81,7 @@ export default function Navbar({ onOpenWhatsApp }) {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-['Outfit'] text-lg font-semibold text-[#1a1c1b] hover:text-[#0f5238] py-2 px-3 hover:bg-[#d9e6da]/30 rounded-lg transition-colors flex justify-between items-center"
+                  className="font-['Outfit'] text-lg font-semibold text-[#1a1c1b] hover:text-[#00768c] py-2 px-3 hover:bg-[#e0f7fc]/30 rounded-lg transition-colors flex justify-between items-center"
                 >
                   <span>{link.name}</span>
                   <ArrowRight className="w-4 h-4 text-[#556158]" />
@@ -92,13 +89,13 @@ export default function Navbar({ onOpenWhatsApp }) {
               ))}
             </div>
 
-            <div className="pt-3 border-t border-[#E2ECE9]">
+            <div className="pt-3 border-t border-[#e2f4f7]">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenWhatsApp('Consulta desde menú móvil');
                 }}
-                className="w-full bg-[#2d6a4f] text-white py-3.5 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 shadow-md"
+                className="w-full bg-[#0097b2] text-white py-3.5 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 shadow-md"
               >
                 <MessageSquare className="w-4 h-4" />
                 Iniciar Chat por WhatsApp

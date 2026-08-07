@@ -18,15 +18,15 @@ export default function CTASection({ onOpenWhatsApp }) {
   return (
     <section className="py-16 md:py-24 px-5 md:px-8">
       <div className="max-w-[1280px] mx-auto">
-        <div className="bg-[#1A2E26] rounded-3xl p-8 md:p-20 text-center relative overflow-hidden shadow-2xl border border-[#2d6a4f]/40">
+        <div className="bg-[#0b272f] rounded-3xl p-8 md:p-20 text-center relative overflow-hidden shadow-2xl border border-[#0097b2]/40">
           
           {/* Background Decor Glows */}
-          <div className="absolute top-0 right-0 w-80 h-80 bg-[#2d6a4f] rounded-full blur-[140px] opacity-30 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#b1f0ce] rounded-full blur-[140px] opacity-15 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#0097b2] rounded-full blur-[140px] opacity-30 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#bbf2fc] rounded-full blur-[140px] opacity-15 pointer-events-none"></div>
 
           {/* Badge */}
-          <span className="inline-flex items-center gap-1.5 bg-white/10 text-[#b1f0ce] border border-white/20 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 relative z-10">
-            <Sparkles className="w-4 h-4 text-[#b1f0ce]" />
+          <span className="inline-flex items-center gap-1.5 bg-white/10 text-[#bbf2fc] border border-white/20 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 relative z-10">
+            <Sparkles className="w-4 h-4 text-[#bbf2fc]" />
             Atención Personalizada Sin Compromiso
           </span>
 
@@ -35,7 +35,7 @@ export default function CTASection({ onOpenWhatsApp }) {
             ¿Listo para automatizar tu negocio?
           </h2>
 
-          <p className="text-sm md:text-lg text-[#b1f0ce] mb-8 max-w-2xl mx-auto relative z-10 font-bold">
+          <p className="text-sm md:text-lg text-[#bbf2fc] mb-8 max-w-2xl mx-auto relative z-10 font-bold">
             Selecciona tu objetivo y conversemos directamente en WhatsApp:
           </p>
 
@@ -49,11 +49,11 @@ export default function CTASection({ onOpenWhatsApp }) {
                   onClick={() => setSelectedOption(opt)}
                   className={`px-5 py-3 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer flex items-center gap-2 border ${
                     isSelected
-                      ? 'bg-[#b1f0ce] text-[#002114] border-[#b1f0ce] font-bold shadow-lg scale-102'
+                      ? 'bg-[#bbf2fc] text-[#001e24] border-[#bbf2fc] font-bold shadow-lg scale-102'
                       : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
                   }`}
                 >
-                  {isSelected && <Check className="w-4 h-4 text-[#002114]" />}
+                  {isSelected && <Check className="w-4 h-4 text-[#001e24]" />}
                   <span>{opt}</span>
                 </button>
               );
@@ -64,7 +64,7 @@ export default function CTASection({ onOpenWhatsApp }) {
           <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={handleStart}
-              className="inline-flex items-center gap-3 bg-[#2d6a4f] hover:bg-[#b1f0ce] hover:text-[#002114] text-white px-10 py-5 rounded-2xl font-bold text-base md:text-lg transition-all duration-200 shadow-2xl hover:scale-105 active:scale-98 cursor-pointer"
+              className="inline-flex items-center gap-3 bg-[#0097b2] hover:bg-[#bbf2fc] hover:text-[#001e24] text-white px-10 py-5 rounded-2xl font-bold text-base md:text-lg transition-all duration-200 shadow-2xl hover:scale-105 active:scale-98 cursor-pointer"
             >
               <MessageSquare className="w-6 h-6" />
               <span>Iniciar Diagnóstico en WhatsApp</span>

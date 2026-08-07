@@ -32,7 +32,7 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
       // Ignore if confetti fails
     }
 
-    const fullMessage = `Hola SolucionArte 👋🏼\nMi nombre es: ${contactName || 'Un visitante del sitio web'}\nTipo de proyecto: ${projectType}\n\nMensaje: ${customMsg}`;
+    const fullMessage = `Hola AP Desarrollo 👋🏼\nMi nombre es: ${contactName || 'Un visitante del sitio web'}\nTipo de proyecto: ${projectType}\n\nMensaje: ${customMsg}`;
     const encodedText = encodeURIComponent(fullMessage);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
 
@@ -48,7 +48,7 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-3xl max-w-lg w-full p-6 md:p-8 border border-[#E2ECE9] shadow-2xl relative animate-in fade-in zoom-in-95 duration-200"
+        className="bg-white rounded-3xl max-w-lg w-full p-6 md:p-8 border border-[#e2f4f7] shadow-2xl relative animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -61,14 +61,14 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
 
         {/* Modal Header */}
         <div className="flex items-center gap-3.5 mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-[#2d6a4f] text-white flex items-center justify-center shadow-md">
+          <div className="w-12 h-12 rounded-2xl bg-[#0097b2] text-white flex items-center justify-center shadow-md">
             <MessageSquare className="w-6 h-6" />
           </div>
           <div>
             <h3 className="font-['Outfit'] text-2xl font-bold text-[#1a1c1b] leading-tight">
-              Hablar con SolucionArte
+              Hablar con AP Desarrollo
             </h3>
-            <p className="text-xs text-[#2d6a4f] font-medium flex items-center gap-1">
+            <p className="text-xs text-[#0097b2] font-medium flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               En línea ahora mismo en WhatsApp
             </p>
@@ -88,7 +88,7 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
               placeholder="Ej: Carlos Mendoza"
               value={contactName}
               onChange={(e) => setContactName(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-[#bfc9c1] text-sm text-[#1a1c1b] focus:outline-hidden focus:border-[#2d6a4f] focus:ring-2 focus:ring-[#2d6a4f]/20 transition-all bg-[#faf9f7]"
+              className="w-full px-4 py-3 rounded-xl border border-[#bfc9c1] text-sm text-[#1a1c1b] focus:outline-hidden focus:border-[#0097b2] focus:ring-2 focus:ring-[#0097b2]/20 transition-all bg-[#faf9f7]"
             />
           </div>
 
@@ -100,7 +100,7 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
             <select
               value={projectType}
               onChange={(e) => setProjectType(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-[#bfc9c1] text-sm text-[#1a1c1b] focus:outline-hidden focus:border-[#2d6a4f] focus:ring-2 focus:ring-[#2d6a4f]/20 transition-all bg-[#faf9f7]"
+              className="w-full px-4 py-3 rounded-xl border border-[#bfc9c1] text-sm text-[#1a1c1b] focus:outline-hidden focus:border-[#0097b2] focus:ring-2 focus:ring-[#0097b2]/20 transition-all bg-[#faf9f7]"
             >
               <option value="Automatización / IA">⚡ Automatización de Procesos e IA</option>
               <option value="Software a Medida">💻 Desarrollo de Software a Medida</option>
@@ -118,14 +118,14 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
               rows={3}
               value={customMsg}
               onChange={(e) => setCustomMsg(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-[#bfc9c1] text-sm text-[#1a1c1b] focus:outline-hidden focus:border-[#2d6a4f] focus:ring-2 focus:ring-[#2d6a4f]/20 transition-all bg-[#faf9f7] resize-none"
+              className="w-full px-4 py-3 rounded-xl border border-[#bfc9c1] text-sm text-[#1a1c1b] focus:outline-hidden focus:border-[#0097b2] focus:ring-2 focus:ring-[#0097b2]/20 transition-all bg-[#faf9f7] resize-none"
               required
             />
           </div>
 
           {/* Security Note */}
-          <div className="p-3 bg-[#d9e6da]/40 rounded-xl border border-[#bfc9c1]/40 flex items-center gap-2 text-xs text-[#5b675e]">
-            <ShieldCheck className="w-4 h-4 text-[#2d6a4f] shrink-0" />
+          <div className="p-3 bg-[#e0f7fc]/40 rounded-xl border border-[#bfc9c1]/40 flex items-center gap-2 text-xs text-[#4d6569]">
+            <ShieldCheck className="w-4 h-4 text-[#0097b2] shrink-0" />
             <span>Respuesta directa sin intermediarios ni bots molestos.</span>
           </div>
 
@@ -141,7 +141,7 @@ export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
 
             <button
               type="submit"
-              className="px-6 py-3 rounded-xl bg-[#2d6a4f] hover:bg-[#0f5238] text-white text-sm font-bold flex items-center gap-2 transition-all shadow-md active:scale-98 cursor-pointer"
+              className="px-6 py-3 rounded-xl bg-[#0097b2] hover:bg-[#00768c] text-white text-sm font-bold flex items-center gap-2 transition-all shadow-md active:scale-98 cursor-pointer"
             >
               <span>Abrir en WhatsApp</span>
               <Send className="w-4 h-4" />
