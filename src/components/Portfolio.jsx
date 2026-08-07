@@ -55,7 +55,7 @@ export default function Portfolio({ onOpenWhatsApp }) {
         </div>
 
         {/* 4-Project Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
