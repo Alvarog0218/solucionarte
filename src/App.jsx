@@ -31,6 +31,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#051316] text-[#e6eff1] font-body selection:bg-[#0097b2] selection:text-white bg-noise bg-geometric relative overflow-hidden">
+      {/* Moving logo relief watermark background */}
+      <div className="absolute inset-0 bg-logo-texture animate-float-bg pointer-events-none z-0"></div>
+      
       {/* Navigation */}
       <Navbar onOpenWhatsApp={handleOpenWhatsApp} />
 
