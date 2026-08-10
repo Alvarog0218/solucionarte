@@ -18,8 +18,10 @@ export default function Navbar({ onOpenWhatsApp }) {
         <div className="max-w-[1280px] mx-auto flex justify-between items-center px-5 md:px-8 h-full py-0">
           {/* Logo & Status Badge */}
           <div className="flex items-center gap-3">
-            <a href="#" className="hover:opacity-90 transition-opacity flex items-center">
-              <img src="/logo.png" alt="AP Desarrollo" className="h-[100px] md:h-[140px] max-w-[280px] md:max-w-[400px] w-auto object-contain" />
+            <a href="#" className="hover:opacity-90 transition-opacity flex items-center relative group">
+              {/* Highlight backdrop layer */}
+              <div className="absolute inset-y-4 inset-x-2 bg-[#e0f7fc]/10 rounded-2xl blur-md pointer-events-none group-hover:bg-[#e0f7fc]/15 transition-all duration-300"></div>
+              <img src="/logo.png" alt="AP Desarrollo" className="h-[100px] md:h-[140px] max-w-[280px] md:max-w-[400px] w-auto object-contain relative z-10" />
             </a>
           </div>
 
