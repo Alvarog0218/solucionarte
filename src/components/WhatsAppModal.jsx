@@ -3,7 +3,7 @@ import { MessageSquare, X, Send, Sparkles, CheckCircle2, ShieldCheck } from 'luc
 import confetti from 'canvas-confetti';
 
 export default function WhatsAppModal({ isOpen, onClose, initialMessage }) {
-  const [phoneNumber, setPhoneNumber] = useState('573157060211'); // AP Desarrollo WhatsApp
+  const [phoneNumber, setPhoneNumber] = useState('573160596932'); // AP Desarrollo WhatsApp
   const [customMsg, setCustomMsg] = useState('');
   const [contactName, setContactName] = useState('');
   const [projectType, setProjectType] = useState('Automatización / IA');
