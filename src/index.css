@@ -85,10 +85,24 @@ h1, h2, h3, .font-display, .font-headline {
 }
 
 .bg-grid-pattern {
+  position: relative;
   background-size: 50px 50px;
   background-image: 
     linear-gradient(to right, rgba(20, 57, 65, 0.15) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(20, 57, 65, 0.15) 1px, transparent 1px);
+}
+
+.bg-grid-pattern::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, -9999px) var(--mouse-y, -9999px),
+    rgba(0, 151, 178, 0.12),
+    transparent 85%
+  );
 }
 
 .bg-noise {

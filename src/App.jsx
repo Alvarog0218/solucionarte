@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Philosophy from './components/Philosophy';
@@ -19,8 +19,18 @@ export default function App() {
     setIsWhatsAppModalOpen(true);
   };
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      document.documentElement.style.setProperty('--mouse-x', `${e.pageX}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${e.pageY}px`);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-[#051316] text-[#e6eff1] font-body selection:bg-[#0097b2] selection:text-white bg-noise bg-grid-pattern">
+    <div className="min-h-screen bg-[#051316] text-[#e6eff1] font-body selection:bg-[#0097b2] selection:text-white bg-noise bg-grid-pattern relative overflow-hidden">
       {/* Navigation */}
       <Navbar onOpenWhatsApp={handleOpenWhatsApp} />
 
