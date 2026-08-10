@@ -14,7 +14,7 @@ export default function Navbar({ onOpenWhatsApp }) {
 
   return (
     <>
-      <nav className="bg-[#faf9f7]/85 backdrop-blur-md sticky top-0 z-50 w-full border-b border-[#e2f4f7] shadow-xs h-[100px] md:h-[140px]">
+      <nav className="bg-[#051316]/85 backdrop-blur-md sticky top-0 z-50 w-full border-b border-[#143941] shadow-xs h-[100px] md:h-[140px]">
         <div className="max-w-[1280px] mx-auto flex justify-between items-center px-5 md:px-8 h-full py-0">
           {/* Logo & Status Badge */}
           <div className="flex items-center gap-3">
@@ -29,7 +29,7 @@ export default function Navbar({ onOpenWhatsApp }) {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[#404943] text-sm font-medium hover:text-[#00768c] transition-colors duration-200"
+                className="text-[#8fa3a7] text-sm font-medium hover:text-[#0097b2] transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -51,7 +51,7 @@ export default function Navbar({ onOpenWhatsApp }) {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Abrir menú"
-              className="md:hidden p-2 text-[#00768c] hover:bg-[#e0f7fc]/50 rounded-lg transition-colors"
+              className="md:hidden p-2 text-[#0097b2] hover:bg-[#0e3b44]/50 rounded-lg transition-colors"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -63,12 +63,12 @@ export default function Navbar({ onOpenWhatsApp }) {
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs md:hidden" onClick={() => setMobileMenuOpen(false)}>
           <div
-            className="fixed top-[100px] right-0 left-0 bg-[#faf9f7] border-b border-[#e2f4f7] p-6 shadow-xl flex flex-col gap-5 animate-in slide-in-from-top duration-200"
+            className="fixed top-[100px] right-0 left-0 bg-[#051316] border-b border-[#143941] p-6 shadow-xl flex flex-col gap-5 animate-in slide-in-from-top duration-200"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex justify-between items-center pb-3 border-b border-[#e2f4f7]">
-              <span className="text-xs font-bold text-[#556158] uppercase tracking-wider">Navegación</span>
-              <span className="inline-flex bg-[#e0f7fc] text-[#4d6569] px-2.5 py-0.5 rounded-full text-xs font-semibold items-center gap-1.5">
+            <div className="flex justify-between items-center pb-3 border-b border-[#143941]">
+              <span className="text-xs font-bold text-[#8fa3a7] uppercase tracking-wider">Navegación</span>
+              <span className="inline-flex bg-[#0e3b44] text-[#bbf2fc] px-2.5 py-0.5 rounded-full text-xs font-semibold items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0097b2] animate-pulse"></span>
                 En línea
               </span>
@@ -80,15 +80,15 @@ export default function Navbar({ onOpenWhatsApp }) {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-['Outfit'] text-lg font-semibold text-[#1a1c1b] hover:text-[#00768c] py-2 px-3 hover:bg-[#e0f7fc]/30 rounded-lg transition-colors flex justify-between items-center"
+                  className="font-['Outfit'] text-lg font-semibold text-[#e6eff1] hover:text-[#0097b2] py-2 px-3 hover:bg-[#0e3b44]/30 rounded-lg transition-colors flex justify-between items-center"
                 >
                   <span>{link.name}</span>
-                  <ArrowRight className="w-4 h-4 text-[#556158]" />
+                  <ArrowRight className="w-4 h-4 text-[#8fa3a7]" />
                 </a>
               ))}
             </div>
 
-            <div className="pt-3 border-t border-[#e2f4f7]">
+            <div className="pt-3 border-t border-[#143941]">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);

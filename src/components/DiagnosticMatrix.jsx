@@ -34,18 +34,18 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white border-y border-[#e2f4f7]" id="diagnostico">
+    <section className="py-16 md:py-24 bg-[#051316] border-y border-[#143941]" id="diagnostico">
       <div className="max-w-[1280px] mx-auto px-5 md:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block bg-[#e0f7fc] text-[#00768c] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-[#bfc9c1]/40">
+          <span className="inline-block bg-[#0e3b44] text-[#bbf2fc] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-[#143941]">
             Diagnóstico de Eficiencia
           </span>
-          <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#1a1c1b] mb-4 tracking-tight">
+          <h2 className="font-['Outfit'] text-3xl md:text-5xl font-bold text-[#e6eff1] mb-4 tracking-tight">
             ¿Reconoces estas dificultades en tu negocio?
           </h2>
-          <p className="text-base md:text-lg text-[#556158]">
+          <p className="text-base md:text-lg text-[#8fa3a7]">
             Identifica la fricción que frena el crecimiento de tu empresa hoy.
           </p>
         </div>
@@ -57,33 +57,33 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
             return (
               <div
                 key={index}
-                className="bg-[#faf9f7] p-7 rounded-2xl border border-[#e2f4f7] hover-lift flex flex-col justify-between h-full group"
+                className="bg-[#0c242b] p-7 rounded-2xl border border-[#143941] hover-lift flex flex-col justify-between h-full group"
               >
                 <div>
                   <div className="mb-5 flex justify-between items-start">
                     <div className="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center border border-red-100 group-hover:scale-105 transition-transform">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-[11px] font-extrabold text-[#556158] uppercase tracking-wider bg-[#e9e8e6] px-2 py-0.5 rounded-md">
+                    <span className="text-[11px] font-extrabold text-[#8fa3a7] uppercase tracking-wider bg-[#0e3b44] px-2 py-0.5 rounded-md">
                       Fricción
                     </span>
                   </div>
-
-                  <h3 className="font-['Outfit'] font-bold text-xl text-[#1a1c1b] mb-3 group-hover:text-[#00768c] transition-colors">
+ 
+                  <h3 className="font-['Outfit'] font-bold text-xl text-[#e6eff1] mb-3 group-hover:text-[#0097b2] transition-colors">
                     {item.title}
                   </h3>
-
-                  <p className="text-sm text-[#404943] leading-relaxed mb-6 italic">
+ 
+                  <p className="text-sm text-[#8fa3a7] leading-relaxed mb-6 italic">
                     "{item.problem}"
                   </p>
                 </div>
-
-                <div className="pt-5 border-t border-[#e2f4f7]">
-                  <div className="flex items-center gap-2 text-[#00768c] font-bold text-sm mb-1">
+ 
+                <div className="pt-5 border-t border-[#143941]">
+                  <div className="flex items-center gap-2 text-[#0097b2] font-bold text-sm mb-1">
                     <CheckCircle2 className="w-4 h-4 text-[#0097b2] shrink-0" />
                     <span>{item.solution}</span>
                   </div>
-                  <p className="text-[12px] text-[#4d6569] pl-6 leading-normal">{item.impact}</p>
+                  <p className="text-[12px] text-[#8fa3a7] pl-6 leading-normal">{item.impact}</p>
                 </div>
               </div>
             );

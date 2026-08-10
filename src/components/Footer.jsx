@@ -10,17 +10,17 @@ export default function Footer({ onOpenWhatsApp }) {
 
   return (
     <>
-      <footer className="bg-[#f4f3f1] border-t border-[#e2f4f7] pt-16 pb-10">
+      <footer className="bg-[#051316] border-t border-[#143941] pt-16 pb-10">
         <div className="max-w-[1280px] mx-auto px-5 md:px-8">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
             
             {/* Left Bio */}
             <div className="max-w-md">
-              <span className="font-['Outfit'] text-[#00768c] text-2xl font-bold mb-3 block tracking-tight">
+              <span className="font-['Outfit'] text-[#0097b2] text-2xl font-bold mb-3 block tracking-tight">
                 AP Desarrollo
               </span>
-              <p className="text-[#556158] text-sm leading-relaxed">
+              <p className="text-[#8fa3a7] text-sm leading-relaxed">
                 Transformamos procesos manuales en activos digitales que trabajan por ti 24/7. Sin complicaciones, sin jerga técnica, solo resultados medibles.
               </p>
             </div>
@@ -29,7 +29,7 @@ export default function Footer({ onOpenWhatsApp }) {
             <div className="flex items-center gap-4 flex-wrap">
               <button
                 onClick={scrollToTop}
-                className="w-10 h-10 rounded-full border border-[#bfc9c1] flex items-center justify-center text-[#00768c] hover:bg-[#0097b2] hover:text-white transition-all shadow-2xs cursor-pointer"
+                className="w-10 h-10 rounded-full border border-[#143941] flex items-center justify-center text-[#bbf2fc] hover:bg-[#0097b2] hover:text-[#001e24] transition-all shadow-2xs cursor-pointer"
                 title="Volver arriba"
               >
                 <ArrowUp className="w-4 h-4" />
@@ -47,27 +47,27 @@ export default function Footer({ onOpenWhatsApp }) {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-8 border-t border-[#bfc9c1]/40 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#556158]">
+          <div className="pt-8 border-t border-[#143941] flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#8fa3a7]">
             <p>© 2026 AP Desarrollo. Todos los derechos reservados.</p>
             
             <div className="flex items-center gap-6 font-medium">
               <button
                 onClick={() => setModalType('privacy')}
-                className="hover:text-[#00768c] underline decoration-transparent hover:decoration-[#00768c] transition-all cursor-pointer"
+                className="hover:text-[#0097b2] underline decoration-transparent hover:decoration-[#0097b2] transition-all cursor-pointer"
               >
                 Política de Privacidad
               </button>
 
               <button
                 onClick={() => setModalType('terms')}
-                className="hover:text-[#00768c] underline decoration-transparent hover:decoration-[#00768c] transition-all cursor-pointer"
+                className="hover:text-[#0097b2] underline decoration-transparent hover:decoration-[#0097b2] transition-all cursor-pointer"
               >
                 Términos del Servicio
               </button>
 
               <a
                 href="#servicios"
-                className="hover:text-[#00768c] underline decoration-transparent hover:decoration-[#00768c] transition-all"
+                className="hover:text-[#0097b2] underline decoration-transparent hover:decoration-[#0097b2] transition-all"
               >
                 Proyectos
               </a>
@@ -84,19 +84,19 @@ export default function Footer({ onOpenWhatsApp }) {
           onClick={() => setModalType(null)}
         >
           <div
-            className="bg-white rounded-3xl max-w-xl w-full p-6 md:p-8 border border-[#e2f4f7] shadow-2xl relative animate-in fade-in zoom-in duration-200 max-h-[80vh] overflow-y-auto"
+            className="bg-[#0a2329] rounded-3xl max-w-xl w-full p-6 md:p-8 border border-[#143941] shadow-2xl relative animate-in fade-in zoom-in duration-200 max-h-[80vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-[#e0f7fc] text-[#00768c] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-[#0e3b44] text-[#bbf2fc] flex items-center justify-center">
                 {modalType === 'privacy' ? <Shield className="w-5 h-5" /> : <FileText className="w-5 h-5" />}
               </div>
-              <h3 className="font-['Outfit'] text-2xl font-bold text-[#1a1c1b]">
+              <h3 className="font-['Outfit'] text-2xl font-bold text-[#e6eff1]">
                 {modalType === 'privacy' ? 'Política de Privacidad' : 'Términos del Servicio'}
               </h3>
             </div>
 
-            <div className="text-xs text-[#404943] space-y-3 leading-relaxed mb-6">
+            <div className="text-xs text-[#8fa3a7] space-y-3 leading-relaxed mb-6">
               {modalType === 'privacy' ? (
                 <>
                   <p>
