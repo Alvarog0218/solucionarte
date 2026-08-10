@@ -20,7 +20,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#051316] text-[#e6eff1] font-body selection:bg-[#0097b2] selection:text-white">
+    <div className="min-h-screen bg-[#051316] text-[#e6eff1] font-body selection:bg-[#0097b2] selection:text-white bg-noise bg-grid-pattern">
       {/* Navigation */}
       <Navbar onOpenWhatsApp={handleOpenWhatsApp} />
 
