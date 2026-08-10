@@ -13,7 +13,7 @@ export default function Portfolio({ onOpenWhatsApp }) {
       technologies: ['React', 'Next.js', 'Go', 'Redis', 'GraphQL'],
       stats: 'Tiempos de carga reducidos en 80%',
       backgroundImage: '/ultra_bg.jpg',
-      liveUrl: 'https://ultra.apdesarrollo.com/'
+      liveUrl: 'https://ultra-web-5kig.vercel.app/'
     },
     {
       title: 'Darrum',
@@ -23,7 +23,7 @@ export default function Portfolio({ onOpenWhatsApp }) {
       technologies: ['TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
       stats: 'Control de inventario 100% preciso',
       backgroundImage: '/darrum_bg.jpg',
-      liveUrl: 'https://darrum.co/'
+      liveUrl: 'https://darrum.vercel.app/'
     },
     {
       title: 'Ambos y Lit',

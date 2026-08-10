@@ -1,17 +1,7 @@
-import React, { useState } from 'react';
-import { AlertTriangle, PackageSearch, Table, Globe, CheckCircle2, Calculator, Sparkles, MessageSquare } from 'lucide-react';
+import React from 'react';
+import { AlertTriangle, PackageSearch, Table, Globe, CheckCircle2 } from 'lucide-react';
 
 export default function DiagnosticMatrix({ onOpenWhatsApp }) {
-  // Calculator state
-  const [employees, setEmployees] = useState(4);
-  const [hoursPerEmployee, setHoursPerEmployee] = useState(6);
-  const [hourlyRate, setHourlyRate] = useState(12);
-
-  // Calculations
-  const weeklyHoursSaved = Math.round(employees * hoursPerEmployee * 0.85); // 85% automated
-  const monthlySavings = Math.round(weeklyHoursSaved * 4 * hourlyRate);
-  const yearlySavings = monthlySavings * 12;
-
   const painPoints = [
     {
       icon: AlertTriangle,
@@ -61,7 +51,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
         </div>
 
         {/* 4 Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {painPoints.map((item, index) => {
             const Icon = item.icon;
             return (
@@ -98,123 +88,6 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
               </div>
             );
           })}
-        </div>
-
-        {/* Interactive ROI Calculator Section */}
-        <div className="bg-[#faf9f7] rounded-3xl p-8 md:p-12 border border-[#e2f4f7] shadow-sm" id="calculadora">
-          <div className="flex flex-col lg:flex-row items-center gap-10">
-            
-            {/* Calculator Controls */}
-            <div className="flex-1 w-full">
-              <div className="flex items-center gap-2 text-[#00768c] font-bold text-sm mb-2">
-                <Calculator className="w-5 h-5 text-[#0097b2]" />
-                <span>Simulador Interactivo de Ahorro</span>
-              </div>
-              <h3 className="font-['Outfit'] text-2xl md:text-3xl font-bold text-[#1a1c1b] mb-4">
-                Calcula el tiempo y dinero que pierdes
-              </h3>
-              <p className="text-sm text-[#556158] mb-8">
-                Mide el impacto directo de la automatización en la productividad de tu equipo:
-              </p>
-
-              <div className="space-y-6">
-                {/* Control 1: Empleados */}
-                <div>
-                  <div className="flex justify-between items-center mb-2 text-sm font-semibold text-[#1a1c1b]">
-                    <span>Personal dedicado a tareas repetitivas:</span>
-                    <span className="font-bold text-[#00768c] bg-[#e0f7fc] px-3 py-1 rounded-lg">
-                      {employees} personas
-                    </span>
-                  </div>
-                  <input
-                    type="range"
-                    min="1"
-                    max="20"
-                    value={employees}
-                    onChange={(e) => setEmployees(parseInt(e.target.value))}
-                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#0097b2]"
-                  />
-                </div>
-
-                {/* Control 2: Horas por semana */}
-                <div>
-                  <div className="flex justify-between items-center mb-2 text-sm font-semibold text-[#1a1c1b]">
-                    <span>Horas perdidas/semana por persona:</span>
-                    <span className="font-bold text-[#00768c] bg-[#e0f7fc] px-3 py-1 rounded-lg">
-                      {hoursPerEmployee} hrs/semana
-                    </span>
-                  </div>
-                  <input
-                    type="range"
-                    min="2"
-                    max="20"
-                    value={hoursPerEmployee}
-                    onChange={(e) => setHoursPerEmployee(parseInt(e.target.value))}
-                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#0097b2]"
-                  />
-                </div>
-
-                {/* Control 3: Costo hora */}
-                <div>
-                  <div className="flex justify-between items-center mb-2 text-sm font-semibold text-[#1a1c1b]">
-                    <span>Costo estimado por hora (USD):</span>
-                    <span className="font-bold text-[#00768c] bg-[#e0f7fc] px-3 py-1 rounded-lg">
-                      ${hourlyRate} USD/hr
-                    </span>
-                  </div>
-                  <input
-                    type="range"
-                    min="5"
-                    max="50"
-                    value={hourlyRate}
-                    onChange={(e) => setHourlyRate(parseInt(e.target.value))}
-                    className="w-full h-2 bg-[#e3e2e0] rounded-lg appearance-none cursor-pointer accent-[#0097b2]"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Calculator Results Display */}
-            <div className="w-full lg:w-96 bg-[#0b272f] text-white p-8 rounded-2xl shadow-xl flex flex-col justify-between border border-[#0097b2]/50">
-              <div>
-                <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
-                  <span className="text-xs font-bold text-[#bbf2fc] uppercase tracking-wider flex items-center gap-1">
-                    <Sparkles className="w-4 h-4" /> Proyección Estimada
-                  </span>
-                  <span className="text-[11px] bg-white/10 text-white px-2 py-0.5 rounded-full">
-                    85% Eficiencia
-                  </span>
-                </div>
-
-                <div className="mb-6">
-                  <p className="text-xs text-[#bfc9c1] uppercase font-bold tracking-wider mb-1">
-                    Tiempo Recuperado
-                  </p>
-                  <p className="font-['Outfit'] text-4xl font-extrabold text-[#bbf2fc]">
-                    {weeklyHoursSaved} hrs<span className="text-sm font-normal text-white/80">/semana</span>
-                  </p>
-                </div>
-
-                <div className="mb-8">
-                  <p className="text-xs text-[#bfc9c1] uppercase font-bold tracking-wider mb-1">
-                    Ahorro Proyectado Anual
-                  </p>
-                  <p className="font-['Outfit'] text-4xl font-extrabold text-white">
-                    ${yearlySavings.toLocaleString()} <span className="text-xs font-normal text-[#bbf2fc]">USD</span>
-                  </p>
-                </div>
-              </div>
-
-              <button
-                onClick={() => onOpenWhatsApp(`Hola! Usé su calculadora: tengo ${employees} empleados perdiendo ${hoursPerEmployee}h/sem. Quiero recuperar estas ${weeklyHoursSaved}h semanales`)}
-                className="w-full bg-[#0097b2] hover:bg-[#bbf2fc] hover:text-[#001e24] text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg active:scale-98 cursor-pointer text-sm"
-              >
-                <MessageSquare className="w-4 h-4" />
-                Recuperar estas {weeklyHoursSaved}h en WhatsApp
-              </button>
-            </div>
-
-          </div>
         </div>
 
       </div>

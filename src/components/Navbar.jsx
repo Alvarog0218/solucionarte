@@ -7,7 +7,6 @@ export default function Navbar({ onOpenWhatsApp }) {
   const navLinks = [
     { name: 'Filosofía', href: '#filosofia' },
     { name: 'Diagnóstico', href: '#diagnostico' },
-    { name: 'Calculadora ROI', href: '#calculadora' },
     { name: 'Servicios', href: '#servicios' },
     { name: 'Portafolio', href: '#portafolio' },
     { name: 'Proceso', href: '#proceso' },
