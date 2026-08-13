@@ -34,7 +34,7 @@ export default function DiagnosticMatrix({ onOpenWhatsApp }) {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#051316] border-y border-[#143941]" id="diagnostico">
+    <section className="py-16 md:py-24 bg-transparent border-y border-[#143941]" id="diagnostico">
       <div className="max-w-[1280px] mx-auto px-5 md:px-8">
         
         {/* Header */}

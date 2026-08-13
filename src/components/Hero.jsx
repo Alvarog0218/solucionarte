@@ -4,7 +4,7 @@ import DashboardWidget from './DashboardWidget';
 
 export default function Hero({ onOpenWhatsApp }) {
   return (
-    <section className="py-12 md:py-20 lg:py-24 relative overflow-hidden bg-gradient-to-b from-[#051316] via-[#051316] to-[#081a1f]/40">
+    <section className="py-12 md:py-20 lg:py-24 relative overflow-hidden bg-transparent">
       
       {/* Background Decorative Blob */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-tr from-[#0097b2]/10 to-[#0e3b44]/20 blur-3xl rounded-full pointer-events-none -z-10"></div>

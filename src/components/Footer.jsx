@@ -10,7 +10,7 @@ export default function Footer({ onOpenWhatsApp }) {
 
   return (
     <>
-      <footer className="bg-[#051316] border-t border-[#143941] pt-16 pb-10">
+      <footer className="bg-transparent border-t border-[#143941] pt-16 pb-10">
         <div className="max-w-[1280px] mx-auto px-5 md:px-8">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">

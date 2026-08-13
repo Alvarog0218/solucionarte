@@ -64,7 +64,7 @@ export default function Capabilities({ onOpenWhatsApp }) {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#051316]" id="servicios">
+    <section className="py-16 md:py-24 bg-transparent" id="servicios">
       <div className="max-w-[1280px] mx-auto px-5 md:px-8">
         
         {/* Section Title */}

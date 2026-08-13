@@ -40,7 +40,7 @@ export default function Portfolio({ onOpenWhatsApp }) {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#051316]" id="portafolio">
+    <section className="py-16 md:py-24 bg-transparent" id="portafolio">
       <div className="max-w-[1280px] mx-auto px-5 md:px-8">
         
         {/* Header Section */}
@@ -95,14 +95,15 @@ export default function Portfolio({ onOpenWhatsApp }) {
                   </>
                 )}
 
-                {/* Background Image */}
-                {project.backgroundImage && (
+                {/* Single background iframe for projects with liveUrl */}
+                {project.liveUrl && (
                   <>
                     <div className="absolute inset-0 opacity-45 group-hover:opacity-65 pointer-events-none overflow-hidden transition-all duration-500 z-0 blur-[6px]">
-                      <img 
-                        src={project.backgroundImage} 
-                        alt={project.title} 
-                        className="w-full h-full object-cover"
+                      <iframe 
+                        src={project.liveUrl} 
+                        className="w-[300%] h-[300%] border-none scale-[0.333] origin-top-left" 
+                        title={`${project.title} Frame`}
+                        scrolling="no"
                       />
                     </div>
                     {/* Visual protection layer */}

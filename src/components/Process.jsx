@@ -44,7 +44,7 @@ export default function Process({ onOpenWhatsApp }) {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#051316] overflow-hidden" id="proceso">
+    <section className="py-16 md:py-24 bg-transparent overflow-hidden" id="proceso">
       <div className="max-w-[1280px] mx-auto px-5 md:px-8">
         
         {/* Section Header */}
