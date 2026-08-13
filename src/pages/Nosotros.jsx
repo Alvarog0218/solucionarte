@@ -1,9 +1,7 @@
 import React from 'react';
-import { useOutletContext } from 'react-router-dom';
 import { Sparkles, Target, Eye, ShieldCheck, Award, Heart, CheckCircle2, ChevronRight } from 'lucide-react';
 
 export default function Nosotros() {
-  const { handleOpenWhatsApp } = useOutletContext();
 
   const values = [
     {
